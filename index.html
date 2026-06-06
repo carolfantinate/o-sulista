@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Sulista</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -48,10 +47,49 @@
             <p>No Sul, pode-se viver rodeado de muita beleza e atrações incríveis, por isso ele é sempre lembrado como
                 um lugar com muita diversidade de paisagens e entretenimento. Navegue pelos lugares mais visitados da
                 região Sul e veja as belezas que te esperam.</p>
+
+            <div id="carrossel">
+
+                <div class="fade fade-left"></div>
+                <div class="fade fade-right"></div>
+
+                <button class="btn-carousel" id="btn-prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <div class="carousel-view">
+                    <div class="carousel-track" id="carousel-track"></div>
+                </div>
+
+                <button class="btn-carousel" id="btn-next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+
+            </div>
         </section>
 
         <section id="sec-ultimas-noticias">
             <h2>Últimas Notícias</h2>
+            <div id="painel-noticias">
+                <div class="card-noticia">
+                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png" alt="Notícia 1"
+                        class="img-noticia img-not-1">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </h3>
+                    <p>Autor: John Doe</p>
+                </div>
+                <div class="card-noticia">
+                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png" alt="Notícia 2"
+                        class="img-noticia img-not-2">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h3>
+                    <p>Autor: Jane Smith</p>
+                </div>
+                <div class="card-noticia">
+                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png" alt="Notícia 3"
+                        class="img-noticia">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                    <p>Autor: Bob Johnson</p>
+                </div>
+            </div>
         </section>
 
         <section id="sec-painel">
@@ -71,23 +109,50 @@
                     Carregando previsão...
                 </div>
             </div>
+
+            <div id="painel-cotacoes">
+                <div class="card-cotacao" id="dolar">
+                    Carregando cotação...
+                </div>
+                <div class="card-cotacao" id="euro">
+                    Carregando cotação...
+                </div>
+                <div class="card-cotacao" id="libra">
+                    Carregando cotação...
+                </div>
+            </div>
         </section>
 
         <section id="sec-tirinhas">
             <h2>Sul em Tirinhas</h2>
-            <img src="" alt="Tirinha sobre o Sul" id="img-tirinha">
-            <p>Gostou da tirinha? Confira nossa coleção completa de quadrinhos e acompanhe novas histórias no O Sulista.
-            </p>
-            <a href="#">
-                <span>Acessar seção de tirinhas</span>
-                <i class="fa-solid fa-angle-right"></i>
-            </a>
+            <div id="painel-tirinhas">
+                <img src="assets/tirinha-1.png" alt="Tirinha sobre o Sul" id="img-tirinha">
+                <div>
+                    <p>Gostou da tirinha? Confira nossa coleção completa de quadrinhos e acompanhe novas histórias no O
+                        Sulista.
+                    </p>
+                    <button class="btn-tirinhas">
+                        <span>Acessar seção de tirinhas</span>
+                        <i class="fa-solid fa-angle-right" id="btn-seta-icon"></i>
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
 
+    <footer>
+        <img src="assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-footer">
+        <p>
+            Informando, conectando e valorizando a cultura do Sul
+            <br>
+            © 2026 O Sulista | Desenvolvido por AABBC
+        </p>
+    </footer>
+
     <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
     <script src="js/clima.js"></script>
-    
+    <script src="js/cotacoes.js"></script>
+    <script src="js/carrossel.js"></script>
 </body>
 
 </html>

@@ -41,9 +41,9 @@ async function carregarClima(estado, cidade, latitude, longitude, elementoId) {
         let previsaoHTML = "";
 
         for (let i = 1; i <= 3; i++) {
-            const data = new Date(dados.daily.time[i]);
+            const data = new Date(dados.daily.time[i] + "T12:00:00")
             const diaSemana = diasSemana[data.getDay()];
-            const emojiDia = obterEmojiClima(dados.daily.weather_code[i]);
+            const emojiDia = obterEmojiClima(dados.daily.weather_code[i])
 
             previsaoHTML += `
                 <div class="dia-previsao">
@@ -58,7 +58,7 @@ async function carregarClima(estado, cidade, latitude, longitude, elementoId) {
         document.getElementById(elementoId).innerHTML = `
             <span class="emoji-clima">${emojiAtual}</span>
 
-            <p class="estado">${estado}</p>
+            <p class="subtitulo-card">${estado}</p>
             <h4>${cidade}</h4>
 
             <p class="temperatura-atual">
@@ -71,6 +71,8 @@ async function carregarClima(estado, cidade, latitude, longitude, elementoId) {
                 <p>💧 ${dados.current.relative_humidity_2m}%</p>
                 <p>💨 ${dados.current.wind_speed_10m} km/h</p>
             </div>
+
+            <div class="linha"></div>
 
             <div class="previsao-3-dias">
                 ${previsaoHTML}

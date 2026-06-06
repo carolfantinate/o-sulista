@@ -1,3 +1,8 @@
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 /*---------------section inicial----------------*/
 
 h1 {
@@ -26,9 +31,9 @@ h1 {
 .btn-video {
     margin: 30px 0px 0px 15px;
     position: relative;
-    display:flex;
+    display: flex;
     align-items: center;
-    padding:  15px 30px 15px 70px;
+    padding: 15px 30px 15px 70px;
     background: #17294B;
     color: white;
     border: none;
@@ -63,28 +68,174 @@ h1 {
     font-size: 26px;
 }
 
+.btn-video:hover {
+    background-color: #2D497D;
+    transform: scale(1.05);
+    transition: 0.8s ease;
+
+    & .circulo-play {
+        background-color: #17294B;
+        transition: background-color 0.8s ease;
+    }   
+}
+
 /*--------------section guia turistico------------------*/
 
-#sec-guia {
-    
+#carrossel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+}
+
+.btn-carousel {
+    border: none;
+    background: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #0D2340;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-carousel:hover {
+    color: #5274b3;
+    transition: color 0.5s ease;
+}
+
+.carousel-view {
+    flex: 1;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 30px;
+    transition: transform .4s ease;
+}
+
+.card-turistico {
+    min-width: 250px;
+    margin: 10px 0;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .3);
+}
+
+.card-turistico:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .5);
+    transition: 0.5s ease;
+}
+
+.card-turistico img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-color: #17294B;
+}
+
+.card-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card-info p {
+    font-size: .7em;
+    opacity: .9;
+}
+
+.fade {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.fade-left {
+    left: 0;
+    background: linear-gradient(to right,
+            #fff 0%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.fade-right {
+    right: 0;
+    background: linear-gradient(to left,
+            #fff 0%,
+            rgba(255, 255, 255, 0) 100%);
 }
 
 /*--------------section últimas notícias------------------*/
 #sec-ultimas-noticias {
     background-color: #17294B;
     color: #fff;
-    padding: 30px 90px;
+    padding: 50px 90px;
 }
 
-/*--------------section painel do dia------------------*/
-#sec-painel {
+#sec-ultimas-noticias h2 {
+    margin-bottom: 15px;
+}
 
+#painel-noticias {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 40px 50px;
+    align-items: start;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-noticia:first-child {
+    grid-row: span 2;
+}
+
+.card-noticia h3 {
+    font-weight: normal;
+    font-size: 1em;
+    margin: 10px 0 5px 0;
+}
+
+.card-noticia p {
+    font-size: .9em;
+    color: #bfbfbf;
+}
+
+.img-noticia {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    object-fit: cover;
+}
+
+.img-not-1 {
+    height: 400px;
+}
+
+.img-not-2,
+.card-noticia:nth-child(3) .img-noticia {
+    height: 180px;
 }
 
 /**--------------painel do clima------------------*/
 
 #painel-clima {
-    width: 100%;
+    max-width: 1020px;
     margin: 30px auto;
     display: flex;
     align-items: center;
@@ -92,6 +243,7 @@ h1 {
     background-color: #0D2340;
     border-radius: 15px;
     color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-clima {
@@ -104,7 +256,7 @@ h1 {
     background-color: #152A46;
 }
 
-.estado {
+.subtitulo-card {
     font-size: 0.8em;
     color: #5274b3;
     text-transform: uppercase;
@@ -116,14 +268,21 @@ h1 {
     font-size: 2.8em;
 }
 
-.info-adicional-clima{
+.info-adicional-clima {
     font-size: 0.8em;
     display: flex;
     gap: 10px;
     margin-top: 10px;
 }
 
-.emoji-clima{
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff50;
+    margin: 10px 0;
+}
+
+.emoji-clima {
     position: absolute;
     top: -30px;
     right: -20px;
@@ -158,4 +317,81 @@ h1 {
 
 .emoji-seguinte {
     font-size: 1.7em;
+}
+
+/**--------------painel cotacoes-----------------*/
+
+#painel-cotacoes {
+    max-width: 1020px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0D2340;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-cotacao {
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-cotacao:nth-child(2) {
+    background-color: #152A46;
+}
+
+.moeda {
+    position: absolute;
+    font-size: 5.5em;
+    top: -40px;
+    right: -10px;
+    opacity: 0.1;
+}
+
+.cotacao-valor {
+    font-size: 2.5em;
+}
+
+/*-----------------section tirinhas------------------*/
+
+#painel-tirinhas {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+}
+
+#painel-tirinhas img {
+    max-width: 70%;
+}
+
+.btn-tirinhas {
+    background-color: #152A46;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+    max-width: 270px;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.9em;
+    cursor: pointer;   
+}
+
+#btn-seta-icon {
+    font-size: 2em;
+    color: #ffffff40;
+}
+
+.btn-tirinhas:hover {
+    background-color: #2D497D;
+    transform: scale(1.03);
+    transition: 0.5s ease;
+    cursor: pointer;
 }
