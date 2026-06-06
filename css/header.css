@@ -1,0 +1,30 @@
+header {
+    background-color: #17294B;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    margin-bottom: 50px;
+    font-size: 1.1em;
+}
+
+header nav {
+    width: 30%;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+#logo-header {
+    width: 180px;
+    margin: 0px 25px 0px 0px;
+}
+
+.atual {
+    font-weight: bold;
+}

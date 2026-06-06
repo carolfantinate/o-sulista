@@ -1,0 +1,161 @@
+/*---------------section inicial----------------*/
+
+h1 {
+    font-family: 'Gloock', serif;
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 0.4em;
+}
+
+#sec-home {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+#sec-home p {
+    width: 90%;
+}
+
+#img-home {
+    width: 450px;
+}
+
+/*----------------botao video-----------------*/
+
+.btn-video {
+    margin: 30px 0px 0px 15px;
+    position: relative;
+    display:flex;
+    align-items: center;
+    padding:  15px 30px 15px 70px;
+    background: #17294B;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.circulo-play {
+    position: absolute;
+    left: -20px;
+    width: 70px;
+    height: 70px;
+    background: #2D497D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo-play-interno {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-play-icon {
+    color: #d9d9d9;
+    font-size: 26px;
+}
+
+/*--------------section guia turistico------------------*/
+
+#sec-guia {
+    
+}
+
+/*--------------section últimas notícias------------------*/
+#sec-ultimas-noticias {
+    background-color: #17294B;
+    color: #fff;
+    padding: 30px 90px;
+}
+
+/*--------------section painel do dia------------------*/
+#sec-painel {
+
+}
+
+/**--------------painel do clima------------------*/
+
+#painel-clima {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0D2340;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.card-clima {
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-clima:nth-child(2) {
+    background-color: #152A46;
+}
+
+.estado {
+    font-size: 0.8em;
+    color: #5274b3;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 3px;
+}
+
+.temperatura-atual {
+    font-size: 2.8em;
+}
+
+.info-adicional-clima{
+    font-size: 0.8em;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.emoji-clima{
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    font-size: 5em;
+    opacity: 0.1;
+}
+
+.previsao-3-dias {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.dia-previsao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+
+    background-color: #ffffff18;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+
+.dia-semana {
+    color: #ffffff6f;
+}
+
+.emoji-seguinte {
+    font-size: 1.7em;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sulista</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="atual">Ínicio</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Turismo</a></li>
+                <li><a href="#">Cultura</a></li>
+                <li><a href="#">Tirinhas</a></li>
+            </ul>
+        </nav>
+        <img src="assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-header">
+    </header>
+    <main>
+        <section id="sec-home">
+            <div>
+                <h1>O SULISTA</h1>
+                <p>Seja bem vindo(a)! Este é um jornal voltado para a região Sul do Brasil. Navegue e fique por dentro
+                    de tudo que há nessa pedaço lindo do nosso país. Comece por aqui:</p>
+                <button class="btn-video">
+                    <div class="circulo-play">
+                        <div class="circulo-play-interno">
+                            <i class="fa-solid fa-play" id="btn-play-icon"></i>
+                        </div>
+                    </div>
+                    <span>Assistir Vídeo</span>
+                </button>
+            </div>
+            <div>
+                <img src="assets/img-home.png" alt="Imagem da página inicial" id="img-home">
+            </div>
+        </section>
+
+        <section id="sec-guia">
+            <h2>Guia Turístico</h2>
+            <p>No Sul, pode-se viver rodeado de muita beleza e atrações incríveis, por isso ele é sempre lembrado como
+                um lugar com muita diversidade de paisagens e entretenimento. Navegue pelos lugares mais visitados da
+                região Sul e veja as belezas que te esperam.</p>
+        </section>
+
+        <section id="sec-ultimas-noticias">
+            <h2>Últimas Notícias</h2>
+        </section>
+
+        <section id="sec-painel">
+            <h2>Painel do Dia</h2>
+            <p>Fique por dentro do que acontece agora na região Sul do Brasil. Aqui você acompanha em tempo real a
+                previsão do tempo para as três capitais, e as principais cotações do mercado financeiro. Informação
+                atualizada para você começar o dia bem informado, do jeito sulista.</p>
+
+            <div id="painel-clima">
+                <div class="card-clima" id="clima-curitiba">
+                    Carregando previsão...
+                </div>
+                <div class="card-clima" id="clima-floripa">
+                    Carregando previsão...
+                </div>
+                <div class="card-clima" id="clima-porto-alegre">
+                    Carregando previsão...
+                </div>
+            </div>
+        </section>
+
+        <section id="sec-tirinhas">
+            <h2>Sul em Tirinhas</h2>
+            <img src="" alt="Tirinha sobre o Sul" id="img-tirinha">
+            <p>Gostou da tirinha? Confira nossa coleção completa de quadrinhos e acompanhe novas histórias no O Sulista.
+            </p>
+            <a href="#">
+                <span>Acessar seção de tirinhas</span>
+                <i class="fa-solid fa-angle-right"></i>
+            </a>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
+    <script src="js/clima.js"></script>
+    
+</body>
+
+</html>
