@@ -1,0 +1,132 @@
+#sec-not-principal {
+    margin: 80px 0;
+}
+
+#not-principal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#img-not-principal {
+    width: 35%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+#infos-not-principal {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+#infos-not-principal h2 {
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#infos-not-principal h3 {
+    font-weight: normal;
+    color: #828282;
+    font-size: 1.2em;
+}
+
+#infos-not-principal p {
+    color: #828282;
+    margin-bottom: 10px;
+}
+
+#btn-acessar-materia {
+    background-color: #6C80A3;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 15px;
+}
+
+/*--------------------------------*/
+
+#sec-noticias {
+    background-color: #17294B;
+    color: #fff;
+    padding: 50px 90px 30px 90px;
+}
+
+#grid-noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+    margin: 30px auto;
+    width: 95%;
+}
+
+.card-noticia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-noticia h3 {
+    margin: 10px 0 5px;
+    font-weight: normal;
+}
+
+.card-noticia p {
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+/*-------------*/
+
+#sec-coluna p, button {
+    font-size: 1.1em;
+}
+
+#grupo-colunas {
+    margin: 40px auto;
+}
+
+.artigo {
+    display: flex;
+    gap: 50px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.artigo img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.artigo h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.artigo p {
+    color: #242323;
+    max-width: 85%;
+}
+
+.artigo button {
+    background-color: #6C80A3;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 15px;
+    max-width: 350px;
+}
+
+.infos-artigo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 80%;
+}
+
+.art-direita .infos-artigo {
+    align-items: flex-end;
+    text-align: right;
+}

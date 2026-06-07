@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sulista</title>
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/noticias.css">
+    <link rel="shortcut icon" href="../assets/icon-sul.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Ínicio</a></li>
+                <li><a href="#" class="atual">Notícias</a></li>
+                <li><a href="#">Turismo</a></li>
+                <li><a href="#">Cultura</a></li>
+                <li><a href="#">Tirinhas</a></li>
+            </ul>
+        </nav>
+        <img src="../assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-header">
+    </header>
+    <main>
+        <section id="sec-not-principal">
+            <div id="not-principal">
+                <img src="https://t4.ftcdn.net/jpg/06/57/37/01/360_F_657370150_pdNeG5pjI976ZasVbKN9VqH1rfoykdYU.jpg"
+                    alt="imagem noticia" id="img-not-principal">
+                <div id="infos-not-principal">
+                    <h2>Nome da Matéria</h2>
+                    <h3>Subtítulo | Autor da Notícia</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, totam debitis quis deleniti soluta
+                        voluptas quasi eum odit et rerum perspiciatis officia nihil sequi repellendus animi commodi
+                        exercitationem doloremque suscipit.</p>
+                    <button id="btn-acessar-materia">
+                        Acessar Matéria
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec-noticias">
+            <h2>Principais Notícias</h2>
+            <div id="grid-noticias"></div>
+        </section>
+
+        <section id="sec-coluna">
+            <h2>Coluna Sulista</h2>
+            <p>Análises, reflexões e pontos de vista sobre temas que impactam a região Sul com os melhores artigos de
+                opinião.</p>
+
+            <div id="grupo-colunas">
+                <article class="artigo art-esquerda">
+                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png" alt="">
+                    <div class="infos-artigo">
+                        <h2>Artigo de Opinião</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut</p>
+                        <button>Acessar artigo de Opinião</button>
+                    </div>
+                </article>
+                <article class="artigo art-direita">
+                    <div class="infos-artigo">
+                        <h2>Artigo de Opinião</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda dolor quasi, doloremque
+                            tenetur esse explicabo, neque consequuntur enim aspernatur nisi totam.</p>
+                        <button>Acessar artigo de Opinião</button>
+                    </div>
+                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png" alt="">
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="../assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-footer">
+        <p>
+            Informando, conectando e valorizando a cultura do Sul
+            <br>
+            © 2026 O Sulista | Desenvolvido por AABBC
+        </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
+    <script>
+        const noticias = [
+            {
+                titulo: "Nova tecnologia promete revolucionar a IA",
+                autor: "João Silva",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            },
+            {
+                titulo: "Brasil vence campeonato internacional",
+                autor: "Maria Souza",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            },
+            {
+                titulo: "Descoberta científica surpreende pesquisadores",
+                autor: "Pedro Santos",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            }, {
+                titulo: "Nova tecnologia promete revolucionar a IA",
+                autor: "João Silva",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            },
+            {
+                titulo: "Brasil vence campeonato internacional",
+                autor: "Maria Souza",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            },
+            {
+                titulo: "Descoberta científica surpreende pesquisadores",
+                autor: "Pedro Santos",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            }
+        ];
+
+        const gridNoticias = document.getElementById("grid-noticias");
+
+        noticias.forEach(noticia => {
+            const card = document.createElement("article");
+            card.classList.add("card-noticia");
+
+            card.innerHTML = `
+                <img src="${noticia.imagem}" alt="${noticia.titulo}">
+                <h3>${noticia.titulo}</h3>
+                <p>${noticia.autor}</p>
+            `;
+
+            gridNoticias.appendChild(card);
+        });
+    </script>
+</body>
+
+</html>
