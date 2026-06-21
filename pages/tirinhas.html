@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Sulista</title>
+    <link rel="stylesheet" href="../css/tirinhas.css">
     <link rel="stylesheet" href="../css/geral.css">
     <link rel="shortcut icon" href="../assets/icon-sul.svg" type="image/x-icon">
 </head>
@@ -23,23 +24,101 @@
         <img src="../assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-header">
     </header>
     <main>
-        <section>
-            <div>
+        <section id="sec-introducao">
+            <div id="info-introducao">
                 <h1>Conheça o Sul em Tirinhas</h1>
-                <p>O humor também faz parte da informação. Nesta seção, o O Sulista apresenta tirinhas criativas que retratam situações do cotidiano, temas atuais e acontecimentos de forma leve, divertida e reflexiva. Acompanhe nossas histórias em quadrinhos e veja o mundo por uma nova perspectiva.</p>
+                <p>O humor também faz parte da informação. Nesta seção, o O Sulista apresenta tirinhas criativas que
+                    retratam situações do cotidiano, temas atuais e acontecimentos de forma leve, divertida e reflexiva.
+                    Acompanhe nossas histórias em quadrinhos e veja o mundo por uma nova perspectiva.</p>
                 <blockquote>
                     Humor também é uma forma de informar, refletir e conectar pessoas.
                 </blockquote>
             </div>
-            <img src="https://t4.ftcdn.net/jpg/06/57/37/01/360_F_657370150_pdNeG5pjI976ZasVbKN9VqH1rfoykdYU.jpg" alt="">
+            <img src="https://t4.ftcdn.net/jpg/06/57/37/01/360_F_657370150_pdNeG5pjI976ZasVbKN9VqH1rfoykdYU.jpg"
+                id="tirinha-introducao" alt="tirinha">
         </section>
-        <section>
+        <section id="sec-destaque">
             <h1>Tirinhas em Destaque</h1>
-            <p>Seleção especial com as tirinhas mais populares e comentadas do O Sulista. Descubra as histórias que estão conquistando nossos leitores.</p>
+            <p>Seleção especial com as tirinhas mais populares e comentadas do O Sulista. Descubra as histórias que
+                estão conquistando nossos leitores.</p>
+            <div id="cards-tirinhas">
+                <div class="card-tirinha-destaque">
+                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+                        class="tirinha-destaque" alt="tirinha destaque">
+                    <div class="desc-card-tirinhas">
+                        <h2>Título da Tirinha</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.</p>
+                    </div>
+                </div>
+
+                <div class="card-tirinha-destaque">
+                    <div class="desc-card-tirinhas esq">
+                        <h2>Título da Tirinha</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.</p>
+                    </div>
+                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+                        class="tirinha-destaque" alt="tirinha destaque">
+                </div>
+
+                <div class="card-tirinha-destaque">
+                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+                        class="tirinha-destaque" alt="tirinha destaque">
+                    <div class="desc-card-tirinhas">
+                        <h2>Título da Tirinha</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sec-recentes">
+            <h1>Últimas Publicações</h1>
+            <p>Fique por dentro das novidades do Sul em Tirinhas. Aqui você encontra as publicações mais recentes, com
+                histórias criativas, personagens cativantes e situações que retratam o cotidiano de forma leve e
+                divertida.</p>
+
+            <div class="carousel-container">
+
+                <button id="prev" class="arrow">
+                    <i class="fa-solid fa-angle-left seta"></i>
+                </button>
+
+                <div id="carousel" class="carousel"></div>
+
+                <button id="next" class="arrow">
+                    <i class="fa-solid fa-angle-right seta"></i>
+                </button>
+
+            </div>
         </section>
         <section>
-            <h1>Últimas Publicações</h1>
-            <p>Fique por dentro das novidades do Sul em Tirinhas. Aqui você encontra as publicações mais recentes, com histórias criativas, personagens cativantes e situações que retratam o cotidiano de forma leve e divertida.</p>
+            <h1>Publique Conosco</h1>
+            <p>Quer ver sua arte publicada no O Sulista? Envie sua tirinha original para nossa equipe de quadrinhos.
+                Estamos sempre em busca de novos talentos e histórias criativas para compartilhar com nossos leitores.
+            </p>
+            <div>
+                <div>
+                    <p><strong>E-mail para envio:</strong></p>
+                    <span>
+                        <i></i>
+                        tirinhas.osulista@gmail.com
+                    </span>
+                </div>
+                <div>
+                    <p><strong>Informações para incluir:</strong></p>
+                    <ul>
+                        <li>Nome do autor</li>
+                        <li>Título da tirinha</li>
+                        <li>Arquivo da tirinha (PNG ou JPG)</li>
+                        <li>Breve descrição (opcional)</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -51,6 +130,192 @@
         </p>
     </footer>
     <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
+    <script>
+
+        const tirinhas = [
+            {
+                titulo: "Tirinha 1",
+                autor: "Autor 1",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            },
+            {
+                titulo: "Tirinha 2",
+                autor: "Autor 2",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            },
+            {
+                titulo: "Tirinha 3",
+                autor: "Autor 3",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            },
+            {
+                titulo: "Tirinha 4",
+                autor: "Autor 4",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            },
+            {
+                titulo: "Tirinha 5",
+                autor: "Autor 5",
+                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+            }
+        ];
+
+        const carousel = document.getElementById("carousel")
+
+        let current = 0
+
+        function criarCard(tirinha, classe) {
+            const card = document.createElement("div")
+
+            card.className = `card ${classe}`
+
+            card.innerHTML = `
+                <img src="${tirinha.imagem}" alt="${tirinha.titulo}">
+
+                <div class="info">
+                    <h3>${tirinha.titulo}</h3>
+                    <p>${tirinha.autor}</p>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function renderizar() {
+
+            const esquerda =
+                tirinhas[
+                (current - 1 + tirinhas.length) %
+                tirinhas.length
+                ];
+
+            const centro =
+                tirinhas[current];
+
+            const direita =
+                tirinhas[
+                (current + 1) %
+                tirinhas.length
+                ];
+
+            const cards = carousel.querySelectorAll(".card");
+
+            // Primeira renderização
+            if (cards.length === 0) {
+
+                carousel.appendChild(
+                    criarCard(esquerda, "left")
+                );
+
+                carousel.appendChild(
+                    criarCard(centro, "center")
+                );
+
+                carousel.appendChild(
+                    criarCard(direita, "right")
+                );
+
+                return;
+            }
+
+            // Atualiza apenas o conteúdo
+            atualizarCard(cards[0], esquerda);
+            atualizarCard(cards[1], centro);
+            atualizarCard(cards[2], direita);
+        }
+
+        function atualizarCard(card, tirinha) {
+
+            card.querySelector("img").src =
+                tirinha.imagem;
+
+            card.querySelector("img").alt =
+                tirinha.titulo;
+
+            card.querySelector("h3").textContent =
+                tirinha.titulo;
+
+            card.querySelector("p").textContent =
+                tirinha.autor;
+        }
+
+        document
+            .getElementById("next")
+            .addEventListener("click", () => {
+
+                const cards =
+                    carousel.querySelectorAll(".card");
+
+                cards[0].className =
+                    "card right";
+
+                cards[1].className =
+                    "card left";
+
+                cards[2].className =
+                    "card center";
+
+                setTimeout(() => {
+
+                    current =
+                        (current + 1) %
+                        tirinhas.length;
+
+                    renderizar();
+
+                    cards[0].className =
+                        "card left";
+
+                    cards[1].className =
+                        "card center";
+
+                    cards[2].className =
+                        "card right";
+
+                }, 450);
+
+            });
+
+
+        document
+            .getElementById("prev")
+            .addEventListener("click", () => {
+
+                const cards =
+                    carousel.querySelectorAll(".card");
+
+                cards[0].className =
+                    "card center";
+
+                cards[1].className =
+                    "card right";
+
+                cards[2].className =
+                    "card left";
+
+                setTimeout(() => {
+
+                    current =
+                        (current - 1 + tirinhas.length) %
+                        tirinhas.length;
+
+                    renderizar();
+
+                    cards[0].className =
+                        "card left";
+
+                    cards[1].className =
+                        "card center";
+
+                    cards[2].className =
+                        "card right";
+
+                }, 450);
+
+            });
+
+        renderizar()
+    </script>
 </body>
 
 </html>
