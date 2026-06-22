@@ -30,7 +30,7 @@
                 <p>O humor também faz parte da informação. Nesta seção, o O Sulista apresenta tirinhas criativas que
                     retratam situações do cotidiano, temas atuais e acontecimentos de forma leve, divertida e reflexiva.
                     Acompanhe nossas histórias em quadrinhos e veja o mundo por uma nova perspectiva.</p>
-                <blockquote>
+                <blockquote id="cita-intro">
                     Humor também é uma forma de informar, refletir e conectar pessoas.
                 </blockquote>
             </div>
@@ -96,20 +96,38 @@
 
             </div>
         </section>
-        <section>
+        <section id="sec-ilustradoras">
+            <h1>Conheça os Ilustradores</h1>
+            <p>Por trás de cada tirinha existe uma mente criativa transformando ideias em histórias. As tirinhas do O Sulista são criadas por estudantes e colaboradores apaixonados por arte, humor e comunicação. Cada ilustração é produzida com criatividade e dedicação para levar entretenimento, informação e reflexão aos nossos leitores.</p>
+            <div id="ilustradoras">
+                <div class="ilustradora">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="Ana Luiza Machado">
+                    <p>Ana Luíza Machado</p>
+                </div>
+
+                <div class="ilustradora">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="Ana Luiza Marchiori">
+                    <p>Ana Luiza Marchiori</p>
+                </div>
+            </div>
+            <blockquote id="cita-tirinhas">
+                Uma boa tirinha pode arrancar um sorriso em poucos segundos e deixar uma reflexão para o resto do dia.
+            </blockquote>
+        </section>
+        <section id="sec-publique">
             <h1>Publique Conosco</h1>
             <p>Quer ver sua arte publicada no O Sulista? Envie sua tirinha original para nossa equipe de quadrinhos.
                 Estamos sempre em busca de novos talentos e histórias criativas para compartilhar com nossos leitores.
             </p>
-            <div>
-                <div>
+            <div id="cards-publique">
+                <div class="card-publique email">
                     <p><strong>E-mail para envio:</strong></p>
                     <span>
                         <i></i>
                         tirinhas.osulista@gmail.com
                     </span>
                 </div>
-                <div>
+                <div class="card-publique">
                     <p><strong>Informações para incluir:</strong></p>
                     <ul>
                         <li>Nome do autor</li>
@@ -130,192 +148,7 @@
         </p>
     </footer>
     <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
-    <script>
-
-        const tirinhas = [
-            {
-                titulo: "Tirinha 1",
-                autor: "Autor 1",
-                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-            },
-            {
-                titulo: "Tirinha 2",
-                autor: "Autor 2",
-                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-            },
-            {
-                titulo: "Tirinha 3",
-                autor: "Autor 3",
-                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-            },
-            {
-                titulo: "Tirinha 4",
-                autor: "Autor 4",
-                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-            },
-            {
-                titulo: "Tirinha 5",
-                autor: "Autor 5",
-                imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-            }
-        ];
-
-        const carousel = document.getElementById("carousel")
-
-        let current = 0
-
-        function criarCard(tirinha, classe) {
-            const card = document.createElement("div")
-
-            card.className = `card ${classe}`
-
-            card.innerHTML = `
-                <img src="${tirinha.imagem}" alt="${tirinha.titulo}">
-
-                <div class="info">
-                    <h3>${tirinha.titulo}</h3>
-                    <p>${tirinha.autor}</p>
-                </div>
-            `;
-
-            return card;
-        }
-
-        function renderizar() {
-
-            const esquerda =
-                tirinhas[
-                (current - 1 + tirinhas.length) %
-                tirinhas.length
-                ];
-
-            const centro =
-                tirinhas[current];
-
-            const direita =
-                tirinhas[
-                (current + 1) %
-                tirinhas.length
-                ];
-
-            const cards = carousel.querySelectorAll(".card");
-
-            // Primeira renderização
-            if (cards.length === 0) {
-
-                carousel.appendChild(
-                    criarCard(esquerda, "left")
-                );
-
-                carousel.appendChild(
-                    criarCard(centro, "center")
-                );
-
-                carousel.appendChild(
-                    criarCard(direita, "right")
-                );
-
-                return;
-            }
-
-            // Atualiza apenas o conteúdo
-            atualizarCard(cards[0], esquerda);
-            atualizarCard(cards[1], centro);
-            atualizarCard(cards[2], direita);
-        }
-
-        function atualizarCard(card, tirinha) {
-
-            card.querySelector("img").src =
-                tirinha.imagem;
-
-            card.querySelector("img").alt =
-                tirinha.titulo;
-
-            card.querySelector("h3").textContent =
-                tirinha.titulo;
-
-            card.querySelector("p").textContent =
-                tirinha.autor;
-        }
-
-        document
-            .getElementById("next")
-            .addEventListener("click", () => {
-
-                const cards =
-                    carousel.querySelectorAll(".card");
-
-                cards[0].className =
-                    "card right";
-
-                cards[1].className =
-                    "card left";
-
-                cards[2].className =
-                    "card center";
-
-                setTimeout(() => {
-
-                    current =
-                        (current + 1) %
-                        tirinhas.length;
-
-                    renderizar();
-
-                    cards[0].className =
-                        "card left";
-
-                    cards[1].className =
-                        "card center";
-
-                    cards[2].className =
-                        "card right";
-
-                }, 450);
-
-            });
-
-
-        document
-            .getElementById("prev")
-            .addEventListener("click", () => {
-
-                const cards =
-                    carousel.querySelectorAll(".card");
-
-                cards[0].className =
-                    "card center";
-
-                cards[1].className =
-                    "card right";
-
-                cards[2].className =
-                    "card left";
-
-                setTimeout(() => {
-
-                    current =
-                        (current - 1 + tirinhas.length) %
-                        tirinhas.length;
-
-                    renderizar();
-
-                    cards[0].className =
-                        "card left";
-
-                    cards[1].className =
-                        "card center";
-
-                    cards[2].className =
-                        "card right";
-
-                }, 450);
-
-            });
-
-        renderizar()
-    </script>
+    <script src="../js/tirinhas.js"></script>
 </body>
 
 </html>

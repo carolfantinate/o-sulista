@@ -19,7 +19,7 @@ h1 {
     gap: 20px;
 }
 
-blockquote {
+#cita-intro {
     color: #17294B;
     font-style: italic;
     font-weight: 500;
@@ -84,6 +84,7 @@ blockquote {
 #sec-recentes p {
     /*font-size: 1.1em;*/
 }
+
 .carousel-container {
     width: 100%;
     height: 400px;
@@ -106,7 +107,7 @@ blockquote {
     background-color: #6f86ad;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
     transition: all .45s ease;
 }
 
@@ -130,7 +131,7 @@ blockquote {
     transform: translateX(-50%) scale(1);
     opacity: 1;
     z-index: 3;
-    box-shadow: 0 5px 25px rgba(0,0,0,.4);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .4);
 }
 
 /* CARD DIREITO */
@@ -181,4 +182,71 @@ i.seta {
     background: none;
     font-size: 40px;
     cursor: pointer;
+}
+
+/*----------secao ilustradoras-----------*/
+#sec-ilustradoras {
+    background-color: #17294B;
+    color: #fff;
+    padding: 70px 130px;
+}
+
+#sec-ilustradoras h1 {
+    margin-bottom: 5px;
+}
+
+#ilustradoras {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.ilustradora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ilustradora img {
+    width: 50%;
+    border-radius: 50%;
+    margin: 10px 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+blockquote#cita-tirinhas {
+    color: #fff;
+    font-style: italic;
+    border-left: 3px solid #fff;
+    padding: 2px 15px;
+    margin: 20px 0;
+}
+
+/*----------secao publique-----------*/
+#sec-publique p, ul{
+    font-size: 1.1em;
+}
+
+#cards-publique {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.card-publique{
+    background-color: #17294B;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.email {
+    max-height: 105px;
+}
+
+.card-publique ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }

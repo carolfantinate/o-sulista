@@ -40,16 +40,19 @@ A Região Sul estará representada através de diversos elementos culturais e in
 
 ## 🎨 Paleta de Cores
 
-| Cor         | Código Hexadecimal | Justificativa                                                                        |
-| ----------- | ------------------ | ------------------------------------------------------------------------------------ |
-| Azul Escuro | #2E7D32            | Representa isso isso aquilo.                                                         |
-| Azul        | #1565C0            | Remete aos rios, ao litoral catarinense e à confiabilidade de um portal de notícias. |
-| Branco      | #FFFFFF            | Traz leveza, organização e facilita a leitura das informações.                       |
-| Cinza       | #424242            | Utilizado para textos e elementos de destaque, proporcionando contraste e elegância. |
+## 🎨 Paleta de Cores
+
+| Cor | Código Hexadecimal | Visualização | Justificativa |
+|------|------|------|------|
+| Azul Marinho | `#17294B` | ![](https://placehold.co/50x50/17294B/FFF) | Cor principal do projeto. Transmite credibilidade, seriedade e profissionalismo, características importantes para um portal de notícias. |
+| Azul Aço | `#2D497D` | ![](https://placehold.co/50x50/2D497D/FFF) | Representa a confiança e a estabilidade da informação, além de remeter aos rios e ao litoral presentes na Região Sul. |
+| Branco Gelo | `#F2F2F2` | ![](https://placehold.co/50x50/F2F2F2/000) | Proporciona leveza, limpeza visual e melhor legibilidade dos conteúdos, favorecendo a experiência do usuário. |
+| Cinza Claro | `#BFBFBF` | ![](https://placehold.co/50x50/BFBFBF/000) | Utilizado em elementos secundários, divisórias e áreas de apoio, contribuindo para uma interface organizada e equilibrada. |
+| Azul Acinzentado | `#6C80A4` | ![](https://placehold.co/50x50/6C80A4/000) | Funciona como cor de apoio para destaques e componentes visuais, harmonizando a paleta e reforçando a identidade moderna do site. |
 
 ### Justificativa da Paleta
 
-As cores foram escolhidas para representar elementos naturais e culturais da Região Sul, transmitindo profissionalismo, credibilidade e identidade regional. O verde destaca a vegetação característica, enquanto o azul faz referência aos recursos hídricos e ao clima da região.
+A paleta foi escolhida para transmitir credibilidade, organização e modernidade, características essenciais para um jornal digital. Os tons de azul reforçam a confiança e a seriedade da informação, enquanto os tons neutros garantem boa legibilidade e equilíbrio visual. Juntas, as cores criam uma identidade profissional que representa a Região Sul e proporciona uma experiência agradável aos leitores.
 
 ---
 
@@ -61,7 +64,7 @@ As cores foram escolhidas para representar elementos naturais e culturais da Reg
 
 ## 🖌️ Wireframe
 
-[Figma do Projeto](INSERIR LINK)
+[Figma do Projeto](https://www.figma.com/design/hb5Zjj2AtnhZm365peNeIh/O-Sulista?node-id=0-1&t=BANnQ3OaZ1PIZnSR-1)
 
 ---
 
