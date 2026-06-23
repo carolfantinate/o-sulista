@@ -1,0 +1,32 @@
+
+#sec-introducao {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#sec-introducao img {
+    width: 40%;
+}
+
+/*-----------secao mapa--------------*/
+#sec-mapa {
+    padding: 50px 90px 70px 90px;
+    background-color: #17294B;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+#sec-mapa iframe{
+    align-self: center;
+}
+
+/*-------sec planeje-----------*/
+
+#sec-planeje{
+    padding: 80px 90px;
+    background-color: #17294B;
+    color: #fff;
+}
+
