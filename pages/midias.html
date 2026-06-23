@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Sulista</title>
-    <link rel="stylesheet" href="../css/tirinhas.css">
+    <link rel="stylesheet" href="../css/midias.css">
     <link rel="stylesheet" href="../css/geral.css">
     <link rel="shortcut icon" href="../assets/icon-sul.svg" type="image/x-icon">
 </head>
@@ -18,7 +18,7 @@
                 <li><a href="noticias.html">Notícias</a></li>
                 <li><a href="#">Turismo</a></li>
                 <li><a href="#">Cultura</a></li>
-                <li><a href="#" class="atual">Tirinhas</a></li>
+                <li><a href="#" class="atual">Mídias</a></li>
             </ul>
         </nav>
         <img src="../assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-header">
@@ -26,49 +26,63 @@
     <main>
         <section id="sec-introducao">
             <div id="info-introducao">
-                <h1>Conheça o Sul em Tirinhas</h1>
-                <p>O humor também faz parte da informação. Nesta seção, o O Sulista apresenta tirinhas criativas que
-                    retratam situações do cotidiano, temas atuais e acontecimentos de forma leve, divertida e reflexiva.
-                    Acompanhe nossas histórias em quadrinhos e veja o mundo por uma nova perspectiva.</p>
+                <h1>Conheça o Sul em Mídias</h1>
+                <p>Explore a Região Sul por meio de podcasts, vídeos e tirinnhas que destacam sua cultura, história,  humor e tradições. Descubra conteúdos informativos e envolventes que aproximam você das histórias, vozes e experiências que fazem parte da identidade sulista.</p>
                 <blockquote id="cita-intro">
-                    Humor também é uma forma de informar, refletir e conectar pessoas.
+                    "Informar é dar voz às histórias que merecem ser ouvidas." — Equipe O Sulista
                 </blockquote>
             </div>
-            <img src="https://t4.ftcdn.net/jpg/06/57/37/01/360_F_657370150_pdNeG5pjI976ZasVbKN9VqH1rfoykdYU.jpg"
-                id="tirinha-introducao" alt="tirinha">
+            <div id="card-midia-principal">
+                <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+                    id="midia-introducao" alt="tirinha">
+                    <div id="info-midia-principal">
+                        <p><strong>Título da Mídia</strong></p>
+                        <p>Subtítulo da Mídia</p>
+                    </div>
+
+                <div>
+                    <button class="btn-video">
+                        <div class="circulo-play">
+                            <div class="circulo-play-interno">
+                                <i class="fa-solid fa-play" id="btn-play-icon"></i>
+                            </div>
+                        </div>
+                        <span><img src="../assets/onda-audio.png" id="onda-audio" alt="onda-audio"></span>
+                    </button>
+                </div>
+            </div>
         </section>
         <section id="sec-destaque">
-            <h1>Tirinhas em Destaque</h1>
-            <p>Seleção especial com as tirinhas mais populares e comentadas do O Sulista. Descubra as histórias que
-                estão conquistando nossos leitores.</p>
-            <div id="cards-tirinhas">
-                <div class="card-tirinha-destaque">
+            <h1>Vozes do Sul</h1>
+            <p>Uma seleção especial de vídeos que destacam histórias, experiências e perspectivas da Região Sul. Descubra os conteúdos que estão conectando pessoas e dando voz à cultura, às tradições e aos acontecimentos que marcam a identidade sulista.</p>
+            <div id="cards-vozes">
+                <div class="card-videos-destaque">
                     <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-                        class="tirinha-destaque" alt="tirinha destaque">
-                    <div class="desc-card-tirinhas">
-                        <h2>Título da Tirinha</h2>
+                        class="video-destaque" alt="video destaque">
+                    <div class="desc-card-videos">
+                        <h2>Título da Mídia</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut.</p>
                     </div>
                 </div>
 
-                <div class="card-tirinha-destaque">
-                    <div class="desc-card-tirinhas esq">
-                        <h2>Título da Tirinha</h2>
+                <div class="card-videos-destaque">
+                    <div class="desc-card-videos esq">
+                        <h2>Título da Mídia</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut.</p>
                     </div>
                     <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-                        class="tirinha-destaque" alt="tirinha destaque">
+                        class="video-destaque" alt="video destaque">
                 </div>
 
-                <div class="card-tirinha-destaque">
+                <div class="card-videos-destaque">
                     <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-                        class="tirinha-destaque" alt="tirinha destaque">
-                    <div class="desc-card-tirinhas">
-                        <h2>Título da Tirinha</h2>
+                        class="video-destaque" alt="video destaque">
+                    <div class="desc-card-videos">
+                        <h2>Título da Mídia</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut.</p>
@@ -77,10 +91,8 @@
             </div>
         </section>
         <section id="sec-recentes">
-            <h1>Últimas Publicações</h1>
-            <p>Fique por dentro das novidades do Sul em Tirinhas. Aqui você encontra as publicações mais recentes, com
-                histórias criativas, personagens cativantes e situações que retratam o cotidiano de forma leve e
-                divertida.</p>
+            <h1>Explore Nossas Tirinhas</h1>
+            <p>Fique por dentro das novidades do Sul em Tirinhas. Aqui você encontra as publicações mais recentes, com histórias criativas, personagens cativantes e situações que retratam o cotidiano de forma leve e divertida.</p>
 
             <div class="carousel-container">
 
@@ -96,24 +108,7 @@
 
             </div>
         </section>
-        <section id="sec-ilustradoras">
-            <h1>Conheça os Ilustradores</h1>
-            <p>Por trás de cada tirinha existe uma mente criativa transformando ideias em histórias. As tirinhas do O Sulista são criadas por estudantes e colaboradores apaixonados por arte, humor e comunicação. Cada ilustração é produzida com criatividade e dedicação para levar entretenimento, informação e reflexão aos nossos leitores.</p>
-            <div id="ilustradoras">
-                <div class="ilustradora">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="Ana Luiza Machado">
-                    <p>Ana Luíza Machado</p>
-                </div>
-
-                <div class="ilustradora">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="Ana Luiza Marchiori">
-                    <p>Ana Luiza Marchiori</p>
-                </div>
-            </div>
-            <blockquote id="cita-tirinhas">
-                Uma boa tirinha pode arrancar um sorriso em poucos segundos e deixar uma reflexão para o resto do dia.
-            </blockquote>
-        </section>
+        
         <section id="sec-publique">
             <h1>Publique Conosco</h1>
             <p>Quer ver sua arte publicada no O Sulista? Envie sua tirinha original para nossa equipe de quadrinhos.
@@ -123,8 +118,8 @@
                 <div class="card-publique email">
                     <p><strong>E-mail para envio:</strong></p>
                     <span>
-                        <i></i>
-                        tirinhas.osulista@gmail.com
+                        <i class="fa-solid fa-envelope"></i>
+                        mídias.osulista@gmail.com
                     </span>
                 </div>
                 <div class="card-publique">
