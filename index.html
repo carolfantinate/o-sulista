@@ -126,6 +126,12 @@
             </div>
         </section>
 
+        <section id="sec-quem-somos">
+            <h2>Quem somos?</h2>
+            <p>Por trás de cada matéria, entrevista e conteúdo publicado existe uma equipe de estudantes dedicada a informar, inspirar e compartilhar histórias. Conheça as pessoas que tornam o O Sulista possível e ajudam a valorizar a cultura, o turismo e as tradições da Região Sul.</p>
+            <button onclick="abrirEquipe()">Conheça Nossa Equipe</button>
+        </section>
+
         <section id="sec-tirinhas">
             <h2>Sul em Tirinhas</h2>
             <div id="painel-tirinhas">
@@ -134,7 +140,7 @@
                     <p>Gostou da tirinha? Confira nossa coleção completa de quadrinhos e acompanhe novas histórias no O
                         Sulista.
                     </p>
-                    <button class="btn-tirinhas">
+                    <button class="btn-tirinhas" onclick="abrirTirinhas()">
                         <span>Acessar seção de tirinhas</span>
                         <i class="fa-solid fa-angle-right" id="btn-seta-icon"></i>
                     </button>
@@ -148,7 +154,7 @@
         <p>
             Informando, conectando e valorizando a cultura do Sul
             <br>
-            © 2026 O Sulista | <a href="pages/equipe.html"><em>Desenvolvido por AABBC</em></a>
+            © 2026 O Sulista | <a href="./pages/equipe.html"><em>Desenvolvido por AABBC</em></a>
         </p>
     </footer>
 
@@ -159,6 +165,14 @@
     <script>
         function abrirVideo() {
             window.location.href = "./pages/midias.html";
+        }
+
+        function abrirTirinhas() {
+            window.location.href = "./pages/midias.html#sec-recentes"
+        }
+
+        function abrirEquipe(){
+            window.location.href = "./pages/equipe.html"
         }
     </script>
 </body>

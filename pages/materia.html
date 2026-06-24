@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sulista</title>
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="shortcut icon" href="../assets/icon-sul.svg" type="image/x-icon">
+    <style>
+        .article-page {
+            width: 100%;
+        }
+
+        .article-page-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+
+        .article-page-content {
+            max-width: 900px;
+        }
+
+        .article-page-paragraph {
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .article-page-quote {
+            border-left: 4px solid #1d2b53;
+            padding-left: 24px;
+            margin: 40px 0;
+        }
+
+        .article-page-inline-image {
+            width: 100%;
+        }
+
+        .article-page-related-news-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(2, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Ínicio</a></li>
+                <li><a href="#" class="atual">Notícias</a></li>
+                <li><a href="turismo.html">Turismo</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+                <li><a href="midias.html">Mídias</a></li>
+            </ul>
+        </nav>
+        <img src="../assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-header">
+    </header>
+    <main class="article-page">
+
+        <!-- TOPO -->
+        <section class="article-page-hero">
+
+            <div class="article-page-hero-content">
+
+                <h1 id="article-page-title"></h1>
+
+                <p id="article-page-subtitle"></p>
+
+                <button id="article-page-author"></button>
+
+            </div>
+
+            <div class="article-page-hero-image-wrapper">
+
+                <img id="article-page-hero-image" alt="">
+
+            </div>
+
+        </section>
+
+        <!-- CONTEÚDO -->
+        <section id="article-page-content" class="article-page-content">
+        </section>
+
+        <!-- LEIA TAMBÉM -->
+        <section class="article-page-related-news">
+
+            <h2 class="article-page-related-news-title">
+                Leia Também:
+            </h2>
+
+            <div id="article-page-related-news-grid" class="article-page-related-news-grid">
+            </div>
+
+        </section>
+
+        <!-- FIQUE POR DENTRO -->
+        <section class="article-page-about-section">
+
+            <h2 class="article-page-about-title">
+                Fique por Dentro
+            </h2>
+
+            <p class="article-page-about-text">
+                Texto institucional do jornal.
+            </p>
+
+        </section>
+
+    </main>
+    <footer>
+        <img src="../assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-footer">
+        <p>
+            Informando, conectando e valorizando a cultura do Sul
+            <br>
+            © 2026 O Sulista | <a href="equipe.html"><em>Desenvolvido por AABBC</em></a>
+        </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
+    <script src="../js/noticias/dadosMaterias.js"></script>
+    <script src="../js/noticias/pagMateria.js"></script>
+</body>
+
+</html>

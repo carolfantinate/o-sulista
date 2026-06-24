@@ -356,6 +356,29 @@ h1 {
     font-size: 2.5em;
 }
 
+/*---------section quem somos---------------*/
+#sec-quem-somos{
+    background-color: #17294B;
+    color: #fff;
+    padding: 50px 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sec-quem-somos p{
+    margin: 10px auto 25px auto;
+}
+
+#sec-quem-somos button{
+    align-self: center;
+    text-align: center;
+    background-color: #6C80A3;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 15px;
+    padding: 8px 15px;
+}
+
 /*-----------------section tirinhas------------------*/
 
 #painel-tirinhas {
