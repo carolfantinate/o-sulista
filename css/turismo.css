@@ -1,4 +1,3 @@
-
 #sec-introducao {
     display: flex;
     align-items: center;
@@ -18,15 +17,253 @@
     flex-direction: column;
 }
 
-#sec-mapa iframe{
+#sec-mapa iframe {
     align-self: center;
+}
+
+/*---------------detinos destaque----------*/
+
+#cards-destinos {
+    max-width: 85%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.flip-card {
+    height: 280px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform .8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+}
+
+.card-front {
+    background: #17294B;
+    color: white;
+}
+
+.card-front img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 14px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.card-content span {
+    display: block;
+    font-size: .9rem;
+    color: #d8d8d8;
+}
+
+.card-back {
+    background: #17294B;
+    color: white;
+    transform: rotateY(180deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-back p {
+    line-height: 1.6;
+    margin: 0;
 }
 
 /*-------sec planeje-----------*/
 
-#sec-planeje{
+#sec-planeje {
     padding: 80px 90px;
     background-color: #17294B;
     color: #fff;
 }
 
+#sec-planeje h2 {
+    margin-top: 40px;
+}
+
+/*------dicas----*/
+
+.dicas-container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-dica {
+    background-color: #6C80A3;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-dica h3 {
+    margin: 0 0 10px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.card-dica p {
+    margin: 0;
+    line-height: 1.5;
+    color: #f0f0f0;
+}
+
+/*-----------pacotes--------------*/
+.pacotes-container {
+    max-width: 100%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 25px;
+}
+
+.flip-card-pac {
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner-pac {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform .8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-pac:hover .flip-card-inner-pac {
+    transform: rotateY(180deg);
+}
+
+.card-front-pac,
+.card-back-pac {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+}
+
+.card-front-pac {
+    background: #6C80A3;
+    color: white;
+}
+
+.card-front-pac img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-content-pac {
+    padding: 5px 14px;
+}
+
+.card-content-pac h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-content-pac span {
+    display: block;
+    font-size: .85rem;
+}
+
+.card-back-pac {
+    background: #6C80A3;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px;
+    font-size: .7em;
+}
+
+.divider {
+    background-color: #0D2340;
+    height: 1px;
+    margin: 15px auto;
+    width: 70%;
+}
+
+.card-back-pac h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.card-back-pac h3 i{
+    margin-right: 3px;
+}
+
+.card-back-pac ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.card-back-pac a {
+    font-style: italic;
+}
+
+.card-back-pac a:hover {
+    text-decoration: underline;
+}
+
+/**/
+
+#estacoes-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.card-estacao{
+    display: flex;
+    gap: 20px;
+    text-align: left;
+}
+
+.card-estacao h3 {
+    color: #17294B;
+}
+
+.card-estacao img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, .25);
+}

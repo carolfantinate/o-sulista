@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sulista</title>
+    <link rel="stylesheet" href="../css/cultura.css">
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="shortcut icon" href="../assets/icon-sul.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Ínicio</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="turismo.html">Turismo</a></li>
+                <li><a href="#" class="atual">Cultura</a></li>
+                <li><a href="midias.html">Mídias</a></li>
+            </ul>
+        </nav>
+        <img src="../assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-header">
+    </header>
+    <main>
+        <section id="sec-introducao">
+            <div>
+                <h1>Essência do Sul</h1>
+                <p>A cultura da Região Sul é marcada pela diversidade de tradições, costumes e influências que ajudaram
+                    a construir sua identidade. Nesta seção, explore manifestações culturais, festividades, gastronomia,
+                    música, dança e histórias que representam a riqueza cultural dos estados do Paraná, Santa Catarina e
+                    Rio Grande do Sul.</p>
+            </div>
+            <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png" alt="">
+        </section>
+        <section id="citacao-cultura">
+            <blockquote>
+                "A cultura mantém vivas as histórias, os costumes e as tradições que conectam gerações." <br>
+                — Equipe O Sulista
+            </blockquote>
+        </section>
+        <section id="sec-tradicoes">
+            <img src="../assets/tradicoes.png" alt="Tradições">
+            <p>As tradições da Região Sul refletem essa diversidade cultural formada pela influência de povos indígenas,
+                europeus e tropeiros ao longo dos séculos. Presentes no cotidiano, nas festas e nos costumes locais,
+                essas manifestações ajudam a preservar a identidade da região e a transmitir conhecimentos de geração em
+                geração. Entre as tradições mais conhecidas estão o chimarrão, as danças folclóricas, as festas típicas
+                e a valorização da cultura gaúcha, catarinense e paranaense.</p>
+        </section>
+        <section id="sec-trad-destaque">
+            <h1>Tradições em Destaque</h1>
+            <p>A Região Sul preserva costumes que representam sua história e diversidade cultural. Nesta seção, conheça
+                algumas das tradições mais marcantes da região, transmitidas entre gerações e presentes no cotidiano de
+                milhões de pessoas. Das celebrações típicas às manifestações artísticas e gastronômicas, cada tradição
+                ajuda a contar a história e fortalecer a identidade cultural do Sul do Brasil.</p>
+            <div class="container-tradicoes" id="tradicoesContainer">
+            </div>
+        </section>
+        <section id="sec-festas">
+            <h1>Principais Festas Típicas</h1>
+            <p>Descubra novos destinos, conheça curiosidades e encontre inspiração para explorar as paisagens, culturas
+                e tradições da Região Sul.</p>
+            <div class="container-festas" id="containerFestas"></div>
+        </section>
+        <section id="sec-dancas">
+            <h1>Conheça as Danças Típicas</h1>
+            <p>As danças tradicionais gaúchas representam costumes e histórias do povo sulista. Apresentadas em festivais e Centros de Tradições Gaúchas (CTGs), ajudam a preservar a identidade cultural da região.</p>
+            <div class="container-dancas" id="dancasContainer">
+            </div>
+        </section>
+        <section id="sec-expressoes">
+            <div id="header-secao-girias">
+                <h1>Expressões Populares</h1>
+                <select id="selectEstadoGirias">
+                    <option value="todos">Selecione o Estado</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </select>
+            </div>
+            <p>A linguagem também faz parte da cultura. Na Região Sul, diversas gírias e expressões são utilizadas no dia a dia e ajudam a transmitir características, costumes e a identidade de seus habitantes. Conhecer essas palavras é uma forma divertida de se aproximar da cultura local.</p>
+            <div id="containerGirias" class="container-girias"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="../assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-footer">
+        <p>
+            Informando, conectando e valorizando a cultura do Sul
+            <br>
+            © 2026 O Sulista | <a href="pages/equipe.html"><em>Desenvolvido por AABBC</em></a>
+        </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
+    <script src="../js/cultura/tradicoes.js"></script>
+    <script src="../js/cultura/festas.js"></script>
+    <script src="../js/cultura/dancas.js"></script>
+    <script src="../js/cultura/girias.js"></script>
+    
+</body>
+
+</html>

@@ -29,13 +29,13 @@
                 <h1>O SULISTA</h1>
                 <p>Seja bem vindo(a)! Este é um jornal voltado para a região Sul do Brasil. Navegue e fique por dentro
                     de tudo que há nessa pedaço lindo do nosso país. Comece por aqui:</p>
-                <button class="btn-video">
+                <button class="btn-video" onclick="abrirVideo()">
                     <div class="circulo-play">
                         <div class="circulo-play-interno">
                             <i class="fa-solid fa-play" id="btn-play-icon"></i>
                         </div>
                     </div>
-                    <span>Assistir Vídeo</span>
+                    <span>Assistir Entrevista</span>
                 </button>
             </div>
             <div>
@@ -75,7 +75,9 @@
                 <div class="card-noticia">
                     <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png" alt="Notícia 1"
                         class="img-noticia img-not-1">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </h3>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut </h3>
                     <p>Autor: John Doe</p>
                 </div>
                 <div class="card-noticia">
@@ -154,6 +156,11 @@
     <script src="js/clima.js"></script>
     <script src="js/cotacoes.js"></script>
     <script src="js/carrossel.js"></script>
+    <script>
+        function abrirVideo() {
+            window.location.href = "./pages/midias.html";
+        }
+    </script>
 </body>
 
 </html>

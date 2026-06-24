@@ -17,7 +17,7 @@
                 <li><a href="../index.html">Ínicio</a></li>
                 <li><a href="noticias.html">Notícias</a></li>
                 <li><a href="turismo.html">Turismo</a></li>
-                <li><a href="#">Cultura</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
                 <li><a href="#" class="atual">Mídias</a></li>
             </ul>
         </nav>
@@ -27,21 +27,24 @@
         <section id="sec-introducao">
             <div id="info-introducao">
                 <h1>Conheça o Sul em Mídias</h1>
-                <p>Explore a Região Sul por meio de podcasts, vídeos e tirinnhas que destacam sua cultura, história,  humor e tradições. Descubra conteúdos informativos e envolventes que aproximam você das histórias, vozes e experiências que fazem parte da identidade sulista.</p>
+                <p>Explore a Região Sul por meio de podcasts, vídeos e tirinnhas que destacam sua cultura, história,
+                    humor e tradições. Descubra conteúdos informativos e envolventes que aproximam você das histórias,
+                    vozes e experiências que fazem parte da identidade sulista.</p>
                 <blockquote id="cita-intro">
                     "Informar é dar voz às histórias que merecem ser ouvidas." — Equipe O Sulista
                 </blockquote>
             </div>
             <div id="card-midia-principal">
-                <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-                    id="midia-introducao" alt="tirinha">
-                    <div id="info-midia-principal">
-                        <p><strong>Título da Mídia</strong></p>
-                        <p>Subtítulo da Mídia</p>
-                    </div>
-
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/0CSKffqEpc0?si=Xfp_Lnvx9l3xmDm_"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video-principal"></iframe>
+                <div id="info-midia-principal">
+                    <p><strong>Vida de um Sulista</strong></p>
+                    <p>Subtítulo da Mídia</p>
+                </div>
                 <div>
-                    <button class="btn-video">
+                    <button id="btnVideo" class="btn-video">
                         <div class="circulo-play">
                             <div class="circulo-play-interno">
                                 <i class="fa-solid fa-play" id="btn-play-icon"></i>
@@ -49,12 +52,17 @@
                         </div>
                         <span><img src="../assets/onda-audio.png" id="onda-audio" alt="onda-audio"></span>
                     </button>
+                    <audio id="audioEntrevista">
+                        <source src="../assets/entrevista-sul.mp3" type="audio/mpeg">
+                    </audio>
                 </div>
             </div>
         </section>
         <section id="sec-destaque">
             <h1>Vozes do Sul</h1>
-            <p>Uma seleção especial de vídeos que destacam histórias, experiências e perspectivas da Região Sul. Descubra os conteúdos que estão conectando pessoas e dando voz à cultura, às tradições e aos acontecimentos que marcam a identidade sulista.</p>
+            <p>Uma seleção especial de vídeos que destacam histórias, experiências e perspectivas da Região Sul.
+                Descubra os conteúdos que estão conectando pessoas e dando voz à cultura, às tradições e aos
+                acontecimentos que marcam a identidade sulista.</p>
             <div id="cards-vozes">
                 <div class="card-videos-destaque">
                     <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
@@ -92,7 +100,9 @@
         </section>
         <section id="sec-recentes">
             <h1>Explore Nossas Tirinhas</h1>
-            <p>Fique por dentro das novidades do Sul em Tirinhas. Aqui você encontra as publicações mais recentes, com histórias criativas, personagens cativantes e situações que retratam o cotidiano de forma leve e divertida.</p>
+            <p>Fique por dentro das novidades do Sul em Tirinhas. Aqui você encontra as publicações mais recentes, com
+                histórias criativas, personagens cativantes e situações que retratam o cotidiano de forma leve e
+                divertida.</p>
 
             <div class="carousel-container">
 
@@ -108,7 +118,7 @@
 
             </div>
         </section>
-        
+
         <section id="sec-publique">
             <h1>Publique Conosco</h1>
             <p>Quer ver sua arte publicada no O Sulista? Envie sua tirinha original para nossa equipe de quadrinhos.
@@ -144,6 +154,32 @@
     </footer>
     <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
     <script src="../js/tirinhas.js"></script>
+    <script>
+        const btnVideo = document.getElementById("btnVideo")
+        const audioEntrevista = document.getElementById("audioEntrevista")
+        const playIcon = document.getElementById("btn-play-icon")
+
+        btnVideo.addEventListener("click", () => {
+            if (audioEntrevista.paused) {
+                audioEntrevista.play();
+
+                playIcon.classList.remove("fa-play")
+                playIcon.classList.add("fa-pause")
+
+            } else {
+                audioEntrevista.pause()
+
+                playIcon.classList.remove("fa-pause")
+                playIcon.classList.add("fa-play")
+
+            }
+        });
+
+        audioEntrevista.addEventListener("ended", () => {
+            playIcon.classList.remove("fa-pause")
+            playIcon.classList.add("fa-play")
+        });
+    </script>
 </body>
 
 </html>
