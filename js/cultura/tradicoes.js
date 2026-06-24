@@ -15,13 +15,13 @@ const tradicoes = [
         imagem: "https://mega.ibxk.com.br/2022/08/19/19133545167187.jpg?ims=1232x490",
         titulo: "Gírias e Expressões",
         descricao: "Palavras como \"bah\", \"guri\", \"guria\" e \"tri\" fazem parte do cotidiano sulista e refletem a identidade e a forma de comunicação da região.",
-        link: "#"
+        link: "#sec-expressoes"
     },
     {
         imagem: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPmM3WMxjwZI5drj50ld_xWOyx7NHy18ME3hX69X7wih9MWqPZ",
         titulo: "Costumes Regionais",
         descricao: "O chimarrão, a hospitalidade e a valorização das tradições familiares são alguns dos costumes que ajudam a manter viva a cultura do Sul do Brasil.",
-        link: "#"
+        link: "#sec-costumes"
     },
 ]
 

@@ -27,6 +27,62 @@ const girias = [
         exemplo: "\"Esse passeio foi tri legal!\"",
         explicacao: "Utilizada para intensificar algo positivo. Expressões como \"tri legal\" ou \"tri bonito\" significam muito legal ou muito bonito."
     },
+    {
+        giria: "Istepô",
+        estado: "SC",
+        local: "Santa Catarina",
+        exemplo: "\"Aquele istepô bateu o carro na garagem\"",
+        explicacao: "Istepô: Pessoa tonta, que só faz bobagem ou que atrapalha"
+    },
+    {
+        giria: "Dazumbanho",
+        estado: "SC",
+        local: "Santa Catarina",
+        exemplo: "\"O guri jogou muita bola ontem e no treino de hoje dazumbanho também.\"",
+        explicacao: "Dazumbanho: Significa que alguém mandou muito bem, deu um show ou fez algo excelente"
+    },
+    {
+        giria: "Mandrião",
+        estado: "SC",
+        local: "Santa Catarina",
+        exemplo: "\"Aquele piá acordou meio mandrião hoje.\"",
+        explicacao: "Mandrião: Alguém preguiçoso, que não quer fazer nada"
+    },
+    {
+        giria: "Seganza",
+        estado: "SC",
+        local: "Santa Catarina",
+        exemplo: "\"Não seja um seganza para se arrumar, a sua irmã já está pronta.\"",
+        explicacao: "Seganza: Pessoa devagar, lenta ou que demora para reagir"
+    },
+    {
+        giria: "Mata-bicho",
+        estado: "PR",
+        local: "Paraná",
+        exemplo: "\"Já tomei meu mata-bicho hoje.\"",
+        explicacao: "Uma das expressões mais conhecidas, simbolizando um lanche rápido ou o café da manhã."
+    },
+    {
+        giria: "Piá / Guria",
+        estado: "PR",
+        local: "Paraná",
+        exemplo: "\"O piá foi ali matar o bicho.\"",
+        explicacao: "Termos utilizados para se referir a menino e menina. É o equivalente ao \"guri\" do Rio Grande do Sul, mas \"piá\" (de origem indígena) é a marca registrada do Paraná."
+    },
+    {
+        giria: "Ficar de revesgueio",
+        estado: "PR",
+        local: "Paraná",
+        exemplo: "\"O piá ficou me olhando de revesgueio no ônibus\"",
+        explicacao: "Olhar de lado, de soslaio, ou algo que ficou meio torto"
+    },
+    {
+        giria: "Gasosa",
+        estado: "PR",
+        local: "Paraná",
+        exemplo: "\"O piá já tomou toda a gasosa do almoço\"",
+        explicacao: "Utilizada para dizer refrigerante. Geralmente associado às marcas locais antigas (como a Cini)."
+    },
 ]
 
 const containerGirias = document.getElementById("containerGirias")
