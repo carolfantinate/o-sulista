@@ -38,7 +38,7 @@ h1 {
 #info-midia-principal {
     background-color: #2D497D;
     color: #fff;
-    padding: 5px 15px 15px 15px;
+    padding: 5px 15px 18px 15px;
     border-radius: 0 0 15px 15px;
 }
 
@@ -55,8 +55,8 @@ h1 {
 .btn-video {
     margin: 30px 0px 0px 15px;
     position: absolute;
-    bottom: -35px;
-    right: -50px;
+    bottom: -60px;
+    right: -55px;
     display: flex;
     align-items: center;
     padding: 10px 5px 5px 50px;

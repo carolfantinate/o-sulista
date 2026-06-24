@@ -65,7 +65,8 @@
         </section>
         <section id="sec-dancas">
             <h1>Conheça as Danças Típicas</h1>
-            <p>As danças tradicionais gaúchas representam costumes e histórias do povo sulista. Apresentadas em festivais e Centros de Tradições Gaúchas (CTGs), ajudam a preservar a identidade cultural da região.</p>
+            <p>As danças tradicionais gaúchas representam costumes e histórias do povo sulista. Apresentadas em
+                festivais e Centros de Tradições Gaúchas (CTGs), ajudam a preservar a identidade cultural da região.</p>
             <div class="container-dancas" id="dancasContainer">
             </div>
         </section>
@@ -79,13 +80,16 @@
                     <option value="PR">Paraná</option>
                 </select>
             </div>
-            <p>A linguagem também faz parte da cultura. Na Região Sul, diversas gírias e expressões são utilizadas no dia a dia e ajudam a transmitir características, costumes e a identidade de seus habitantes. Conhecer essas palavras é uma forma divertida de se aproximar da cultura local.</p>
+            <p>A linguagem também faz parte da cultura. Na Região Sul, diversas gírias e expressões são utilizadas no
+                dia a dia e ajudam a transmitir características, costumes e a identidade de seus habitantes. Conhecer
+                essas palavras é uma forma divertida de se aproximar da cultura local.</p>
             <div id="containerGirias" class="container-girias"></div>
             </div>
         </section>
         <section id="sec-costumes">
             <h1>Costumes Regionais</h1>
-            <p>Os costumes e tradições da Região Sul são profundamente influenciados pelas culturas gaúcha, açoriana, alemã e italiana, variando bastante entre o campo, o litoral e as grandes cidades.</p>
+            <p>Os costumes e tradições da Região Sul são profundamente influenciados pelas culturas gaúcha, açoriana,
+                alemã e italiana, variando bastante entre o campo, o litoral e as grandes cidades.</p>
             <div id="containerCostumes" class="container-costumes">
             </div>
         </section>
@@ -103,42 +107,7 @@
     <script src="../js/cultura/festas.js"></script>
     <script src="../js/cultura/dancas.js"></script>
     <script src="../js/cultura/girias.js"></script>
-    <script>
-
-        const costumes = [
-            {
-                imagem: "https://http2.mlstatic.com/D_NQ_NP_829495-MLB92982261542_092025-O.webp",
-                titulo: "Cultura do Mate",
-                descricao: "Embora o chimarrão mude de estilo (mais amargo no RS, mais suave e grosso no PR), o hábito de tomar mate quente diariamente é universal na região."
-            }, 
-            {
-                imagem: "https://whiteroseforest.org/wp-content/uploads/2023/05/White-Rose-Forest-Shoot-111-low.jpg",
-                titulo: "Preservação Dialetal",
-                descricao: "Uso do pronome \"tu\" conjugado (ou não) de forma informal e o hábito de falar mais pausadamente do que no Sudeste."
-            },
-            {
-                imagem: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW-VLzX7Z2ZcbX3uxGeCeBHWB6UudMFDJf1vgG4oC09knZMaLj",
-                titulo: "A \"Cultura do Frio\"",
-                descricao: "O inverno molda a rotina local. Há o hábito de usar fogão a lenha para aquecer a casa, consumir sopas, quentão e pinhão cozido."
-            },
-        ]
-
-        const containerCostumes = document.getElementById("containerCostumes")
-
-        costumes.forEach(costume => {
-            containerCostumes.innerHTML += `
-            <article class="card-costume">
-                <img src="${costume.imagem}" alt="${costume.titulo}">
-                
-                <div class="card-content-costume">
-                    <h3>${costume.titulo}</h3>
-                    <p>${costume.descricao}</p>
-                </div>
-            </article>
-            `
-        });
-    </script>
-    
+    <script src="../js/cultura/costumes.js"></script>
 </body>
 
 </html>
