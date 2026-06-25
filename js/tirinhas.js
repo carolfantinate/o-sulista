@@ -2,27 +2,27 @@
 const tirinhas = [
     {
         titulo: "A Onomatopeia do Frio",
-        autor: "Autor 2",
+        autor: "Equipe - O Sulista",
         imagem: "../assets/tirinhas/tirinha-2.jpeg"
     },
     {
         titulo: "O Churrasco do \"Pobre\"",
-        autor: "Autor 1",
+        autor: "Equipe - O Sulista",
         imagem: "../assets/tirinhas/tirinha-1.jpeg"
     },
     {
         titulo: "Guerra das dividas: A trena",
-        autor: "Autor 3",
+        autor: "Equipe - O Sulista",
         imagem: "../assets/tirinhas/tirinha-3.jpeg"
     },
     {
         titulo: "O \"Bagual\" no trânsito",
-        autor: "Autor 4",
+        autor: "Equipe - O Sulista",
         imagem: "../assets/tirinhas/tirinha-4.jpeg"
     },
     {
         titulo: "O \"Ciclone Uruguaio\" virtual",
-        autor: "Autor 5",
+        autor: "Equipe - O Sulista",
         imagem: "../assets/tirinhas/tirinha-5.jpeg"
     }
 ];
