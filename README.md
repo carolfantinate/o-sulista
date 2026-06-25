@@ -80,15 +80,3 @@ A paleta foi escolhida para transmitir credibilidade, organização e modernidad
 * JavaScript
 * Figma
 * GitHub
-
----
-
-## 📚 Referências Pesquisadas
-
-### Sites de Notícias da Região Sul
-
-* [Nome do Site](INSERIR LINK)
-* [Nome do Site](INSERIR LINK)
-* [Nome do Site](INSERIR LINK)
-* [Nome do Site](INSERIR LINK)
-* [Nome do Site](INSERIR LINK)
