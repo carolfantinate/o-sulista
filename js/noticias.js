@@ -1,55 +1,37 @@
-const noticias = [
-    {
-        id: 2,
-        titulo: "Prefeitura barra arranha-céu em área turística de Balneário Camboriú",
-        autor: "João Silva",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-    },
-    {
-        id: 2,
-        titulo: "Brasil vence campeonato internacional",
-        autor: "Maria Souza",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-    },
-    {
-        id: 2,
-        titulo: "Descoberta científica surpreende pesquisadores",
-        autor: "Pedro Santos",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-    }, 
-    {
-        titulo: "Nova tecnologia promete revolucionar a IA",
-        autor: "João Silva",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-    },
-    {
-        titulo: "Brasil vence campeonato internacional",
-        autor: "Maria Souza",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-    },
-    {
-        titulo: "Descoberta científica surpreende pesquisadores",
-        autor: "Pedro Santos",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-    }
-];
-
 const gridNoticias = document.getElementById("grid-noticias");
 
-noticias.forEach(noticia => {
-    const card = document.createElement("article");
-    card.classList.add("card-noticia");
+const noticiaPrincipal = materias[0];
 
-    card.innerHTML = `
-    <a href="materia.html?id=${noticia.id}">
-        <img src="${noticia.imagem}" alt="${noticia.titulo}">
-        <h3>${noticia.titulo}</h3>
-        <p>${noticia.autor}</p>
-        </a>
-    `;
+materias
+    .filter(materia => materia.id !== noticiaPrincipal.id)
+    .forEach(materia => {
 
-    gridNoticias.appendChild(card);
-});
+        const card = document.createElement("article");
+
+        card.classList.add("card-noticia");
+
+        card.innerHTML = `
+            <a href="materia.html?id=${materia.id}">
+                <img src="${materia.imagemPrincipal}" alt="${materia.titulo}">
+                <h3>${materia.titulo}</h3>
+                <p>${materia.subtitulo}</p>
+            </a>
+        `;
+
+        gridNoticias.appendChild(card);
+    });
+
+document.getElementById("img-not-principal").src =
+    noticiaPrincipal.imagemPrincipal;
+
+document.getElementById("titulo-principal").textContent =
+    noticiaPrincipal.titulo;
+
+document.getElementById("subtitulo-principal").textContent =
+    noticiaPrincipal.subtitulo;
+
+document.getElementById("descricao-principal").textContent =
+    noticiaPrincipal.descricao;
 
 function acessarMateria() {
     window.location.href = "materia.html?id=1"

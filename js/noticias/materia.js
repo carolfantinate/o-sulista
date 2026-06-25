@@ -11,47 +11,35 @@ if (!materia) {
 
 } else {
 
-    document.getElementById("titulo").textContent =
-        materia.titulo;
+    document.getElementById("titulo").textContent = materia.titulo;
 
-    document.getElementById("subtitulo").textContent =
-        materia.subtitulo;
+    document.getElementById("subtitulo").textContent = materia.subtitulo;
 
-    document.getElementById("descricaoMateria").textContent =
-        materia.descricao;
+    document.getElementById("descricaoMateria").textContent = materia.descricao;
 
-    document.getElementById("localMateria").textContent =
-        materia.local;
+    document.getElementById("localMateria").textContent = materia.local;
 
-    document.getElementById("imgPrincipal").src =
-        materia.imagemPrincipal;
+    document.getElementById("imgPrincipal").src = materia.imagemPrincipal;
 
-    document.getElementById("p1").textContent =
-        materia.paragrafo1;
+    document.getElementById("p1").textContent = materia.paragrafo1;
 
-    document.getElementById("citacao").textContent =
-        materia.citacao;
+    document.getElementById("citacao").textContent = materia.citacao;
 
-    document.getElementById("p2").textContent =
-        materia.paragrafo2;
+    document.getElementById("p2").textContent = materia.paragrafo2;
 
-    document.getElementById("intertitulo").textContent =
-        materia.intertitulo;
+    document.getElementById("intertitulo").textContent = materia.intertitulo;
 
-    document.getElementById("p3").textContent =
-        materia.paragrafo3;
+    document.getElementById("p3").textContent = materia.paragrafo3;
 
-    document.getElementById("imgSecundaria").src =
-        materia.imagemSecundaria;
+    document.getElementById("imgSecundaria").src = materia.imagemSecundaria;
 
-    document.getElementById("miniTitulo").textContent =
-        materia.miniTitulo;
+    document.getElementById("miniTitulo").textContent = materia.miniTitulo;
 
-    document.getElementById("mini-p").textContent =
-        materia.miniTexto;
+    document.getElementById("mini-p").textContent = materia.miniTexto;
 
-    document.getElementById("p4").textContent =
-        materia.paragrafo4;
+    document.getElementById("p4").textContent = materia.paragrafo4;
+
+    document.getElementById("linkMateria").href = materia.link
 }
 
 const containerNoticias =
@@ -59,7 +47,7 @@ const containerNoticias =
 
 materias
     .filter(item => item.id !== idMateria)
-    .slice(0, 3)
+    .slice(0, 4)
     .forEach(item => {
 
         containerNoticias.innerHTML += `
