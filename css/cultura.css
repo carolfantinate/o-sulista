@@ -28,6 +28,8 @@ h1 {
     background-color: #17294B;
     color: #fff;
     padding: 50px 90px;
+    display: flex;
+    align-items: center;
 }
 
 #citacao-cultura blockquote {
