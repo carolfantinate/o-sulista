@@ -90,15 +90,25 @@
     transform: rotateY(180deg);
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
     padding: 20px;
-    text-align: center;
 }
 
 .card-back p {
     line-height: 1.6;
     margin: 0;
+}
+
+.card-back a {
+    background-color: #6C80A3;
+    padding: 10px 15px;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.card-back i{
+    margin-right: 5px;
 }
 
 /*-------sec planeje-----------*/

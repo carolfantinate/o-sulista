@@ -41,37 +41,43 @@ const destinos = [
         imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjiX1STrCXc1sTuDt6aamlA9WnWVuM-2AnzrKePOOLunAm1JHaEF-aFd8&s=10",
         titulo: "Jardim Botânico de Curitiba",
         subtitulo: "Paraná",
-        descricao: "Um dos principais cartões-postais de Curitiba, famoso por sua estufa inspirada em construções europeias e seus belos jardins."
+        descricao: "Um dos principais cartões-postais de Curitiba, famoso por sua estufa inspirada em construções europeias e seus belos jardins.",
+        local: "https://maps.app.goo.gl/1hhMiszna5BHzxUr8"
     },
     {
         imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXF_mrfdPg_Yv_trirEVxZNQGSlwe_f4Jh2t4cWKjyPoXkaYDa72bUGfs&s=10",
         titulo: "Cataratas do Iguaçu",
         subtitulo: "Paraná",
-        descricao: "Patrimônio Natural da Humanidade, reúne centenas de quedas d'água em uma das paisagens mais impressionantes do mundo."
+        descricao: "Uma das maiores maravilhas naturais do mundo, com centenas de quedas d’água impressionantes.",
+        local: "https://maps.app.goo.gl/5LcYpb8vNuMk2cKc6"
     },
     {
         imagem: "https://guiaviajarmelhor.com.br/wp-content/uploads/2021/07/praia-do-rosa-sc-3.jpg",
         titulo: "Praia do Rosa",
         subtitulo: "Santa Catarina",
-        descricao: "Conhecida por suas águas cristalinas, natureza preservada e excelente estrutura para surfistas e turistas."
+        descricao: "Destino famoso por suas paisagens paradisíacas, águas cristalinas e contato direto com a natureza.",
+        local: "https://maps.app.goo.gl/ATHxhFxqacT5fvSC8"
     },
     {
         imagem: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0b/36/d9/bc.jpg",
         titulo: "Beto Carrero World",
         subtitulo: "Santa Catarina",
-        descricao: "Maior parque temático da América Latina, com atrações radicais, shows e áreas temáticas para todas as idades."
+        descricao: "O maior parque temático da América Latina, oferecendo atrações, espetáculos e diversão para todas as idades.",
+        local: "https://maps.app.goo.gl/67oBpuTtvHokp6m5A"
     },
     {
         imagem: "https://cdn-clubecandeias.s3.sa-east-1.amazonaws.com/uploads/featured_images/imagem_destaque_2694.jpeg",
         titulo: "Balneário Camboriú",
         subtitulo: "Santa Catarina",
-        descricao: "Destino famoso por suas praias, vida noturna agitada e pela roda-gigante com vista panorâmica da cidade."
+        descricao: "Conhecida por suas praias, vida noturna e atrações modernas, é um dos destinos turísticos mais visitados do Sul.",
+        local: "https://maps.app.goo.gl/zNYMMLNwSUHNcj5D7"
     },
     {
         imagem: "https://caminhagente.com.br/wp-content/uploads/2025/06/gramado-1.jpeg",
         titulo: "Gramado",
         subtitulo: "Rio Grande do Sul",
-        descricao: "Cidade turística conhecida pela arquitetura europeia, gastronomia e eventos como o Natal Luz."
+        descricao: "Cidade encantadora da Serra Gaúcha, famosa por sua arquitetura, gastronomia e eventos que atraem turistas o ano inteiro.",
+        local: "https://maps.app.goo.gl/8T9EVW31AWFJWT3N6"
     }
 ];
 
@@ -91,7 +97,12 @@ containerDestinos.innerHTML = destinos.map(destino => `
                 </div>
 
                 <div class="card-back">
+                    <p><strong>${destino.titulo}</strong></p>
                     <p>${destino.descricao}</p>
+                    <a href="${destino.local}" target="_blank">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Localização
+                    </a>
                 </div>
 
             </div>
