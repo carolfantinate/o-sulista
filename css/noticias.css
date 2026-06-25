@@ -132,6 +132,13 @@ button {
     padding: 7px 15px;
     border-radius: 15px;
     max-width: 350px;
+    cursor: pointer;
+}
+
+.artigo button:hover{
+    background-color: #2D497D;
+    transform: scale(1.02);
+    transition: 0.5s ease;
 }
 
 .infos-artigo {

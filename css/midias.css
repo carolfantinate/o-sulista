@@ -28,7 +28,7 @@ h1 {
     margin: 20px 0;
 }
 
-#card-midia-principal{
+#card-midia-principal {
     background-color: #2D497D;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
@@ -101,7 +101,7 @@ h1 {
     font-size: 30px;
 }
 
-#onda-audio{
+#onda-audio {
     width: 200px;
     padding: 0;
     margin: 0;
@@ -143,11 +143,14 @@ h1 {
 
 .desc-card-videos h2 {
     font-weight: 600;
-    font-size: 1.7em;
+    font-size: 1.6em;
+    margin-bottom: 5px;
+    line-height: 1.2em;
 }
 
 .video-destaque {
     width: 45%;
+    height: 235px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -253,7 +256,8 @@ i.seta {
 }
 
 /*----------secao publique-----------*/
-#sec-publique p, ul{
+#sec-publique p,
+ul {
     font-size: 1.1em;
 }
 
@@ -264,7 +268,7 @@ i.seta {
     margin-top: 30px;
 }
 
-.card-publique{
+.card-publique {
     background-color: #17294B;
     color: #fff;
     padding: 20px 25px;

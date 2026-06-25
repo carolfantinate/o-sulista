@@ -34,9 +34,9 @@
             <img src="../assets/estados-sul.png" alt="estados do Sul">
         </section>
         <section id="sec-mapa">
-            <div>
+            <div id="header-secao-mapa">
                 <h1>Mapa Turístico</h1>
-                <select id="selectEstadoGirias">
+                <select id="selectEstadoMapa">
                     <option value="RS">Rio Grande do Sul</option>
                     <option value="SC">Santa Catarina</option>
                     <option value="PR">Paraná</option>
@@ -45,16 +45,7 @@
             <p>Explore os principais destinos da Região Sul através do mapa interativo. Descubra cidades, atrações e
                 pontos turísticos que destacam a riqueza cultural, histórica e natural da região.</p>
             <br>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1dQcgNflXiCwzi6ZrIX2TItwLXGiLsZIO&ehbc=2E312F"
-                width="90%" height="480"></iframe>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3305721.3306415346!2d-51.62850312077882!3d-26.606021783984584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spontos%20tur%C3%ADsticos%20paran%C3%A1!5e1!3m2!1spt-BR!2sbr!4v1782385266926!5m2!1spt-BR!2sbr"
-                width="90%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3304024.4359295466!2d-51.628236127861214!3d-26.664679048027065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spontos%20tur%C3%ADsticos%20santa%20catarina!5e1!3m2!1spt-BR!2sbr!4v1782385219753!5m2!1spt-BR!2sbr"
-                width="90%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <div id="containerIframeMapa"></div>
         </section>
         <section>
             <h1>Destinos em destaque</h1>
@@ -135,6 +126,42 @@
     </footer>
     <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
     <script src="../js/turismo.js"></script>
+    <script>
+        const mapas = [
+            {
+                estado: "RS",
+                mapa: `<iframe src="https://www.google.com/maps/d/embed?mid=1dQcgNflXiCwzi6ZrIX2TItwLXGiLsZIO&ehbc=2E312F" width="90%" height="480"></iframe>`
+            },
+            {
+                estado: "SC",
+                mapa: `<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3304024.4359295466!2d-51.628236127861214!3d-26.664679048027065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spontos%20tur%C3%ADsticos%20santa%20catarina!5e1!3m2!1spt-BR!2sbr!4v1782385219753!5m2!1spt-BR!2sbr" width="90%" height="480"></iframe>`
+            },
+            {
+                estado: "PR",
+                mapa: `<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3305721.3306415346!2d-51.62850312077882!3d-26.606021783984584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spontos%20tur%C3%ADsticos%20paran%C3%A1!5e1!3m2!1spt-BR!2sbr!4v1782385266926!5m2!1spt-BR!2sbr" width="90%" height="480"></iframe>`
+            }
+        ];
+
+        const selectEstado = document.getElementById("selectEstadoMapa");
+        const containerMapa = document.getElementById("containerIframeMapa");
+
+        function carregarMapa() {
+
+            const estadoSelecionado = selectEstado.value;
+
+            const mapaEncontrado = mapas.find(
+                mapa => mapa.estado === estadoSelecionado
+            );
+
+            if (mapaEncontrado) {
+                containerMapa.innerHTML = mapaEncontrado.mapa;
+            }
+        }
+
+        carregarMapa();
+
+        selectEstado.addEventListener("change", carregarMapa);
+    </script>
 </body>
 
 </html>

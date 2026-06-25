@@ -90,6 +90,10 @@ h1 {
     border-radius: 15px;
 }
 
+.card-tradicao a:hover{
+    background-color: #5f718f;
+}
+
 .card-tradicao-reverse {
     flex-direction: row-reverse;
     text-align: right;
