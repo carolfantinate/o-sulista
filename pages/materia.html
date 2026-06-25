@@ -6,44 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Sulista</title>
     <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/materia.css">
     <link rel="shortcut icon" href="../assets/icon-sul.svg" type="image/x-icon">
-    <style>
-        .article-page {
-            width: 100%;
-        }
-
-        .article-page-hero {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-        }
-
-        .article-page-content {
-            max-width: 900px;
-        }
-
-        .article-page-paragraph {
-            line-height: 1.8;
-            margin-bottom: 24px;
-        }
-
-        .article-page-quote {
-            border-left: 4px solid #1d2b53;
-            padding-left: 24px;
-            margin: 40px 0;
-        }
-
-        .article-page-inline-image {
-            width: 100%;
-        }
-
-        .article-page-related-news-grid {
-            display: grid;
-            grid-template-columns:
-                repeat(2, 1fr);
-            gap: 24px;
-        }
-    </style>
 </head>
 
 <body>
@@ -60,57 +24,69 @@
         <img src="../assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-header">
     </header>
     <main class="article-page">
-
-        <!-- TOPO -->
-        <section class="article-page-hero">
-
-            <div class="article-page-hero-content">
-
-                <h1 id="article-page-title"></h1>
-
-                <p id="article-page-subtitle"></p>
-
-                <button id="article-page-author"></button>
-
+        <section id="sec-introducao">
+            <div class="info-introducao">
+                <h1 id="titulo">Título da Matéria</h1>
+                <p id="subtitulo" class="subtitulo">Subtítulo/Autor da Notícia</p>
+                <p id="descricaoMateria">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    que é o produto e por que ele é simplesmente indispensável.</p>
+                <span id="localMateria">Curitiba - PA</span>
             </div>
-
-            <div class="article-page-hero-image-wrapper">
-
-                <img id="article-page-hero-image" alt="">
-
-            </div>
-
+            <img id="imgPrincipal" src="https://t4.ftcdn.net/jpg/06/57/37/01/360_F_657370150_pdNeG5pjI976ZasVbKN9VqH1rfoykdYU.jpg" alt="">
         </section>
-
-        <!-- CONTEÚDO -->
-        <section id="article-page-content" class="article-page-content">
-        </section>
-
-        <!-- LEIA TAMBÉM -->
-        <section class="article-page-related-news">
-
-            <h2 class="article-page-related-news-title">
-                Leia Também:
-            </h2>
-
-            <div id="article-page-related-news-grid" class="article-page-related-news-grid">
-            </div>
-
-        </section>
-
-        <!-- FIQUE POR DENTRO -->
-        <section class="article-page-about-section">
-
-            <h2 class="article-page-about-title">
-                Fique por Dentro
-            </h2>
-
-            <p class="article-page-about-text">
-                Texto institucional do jornal.
+        <section id="sec-corpo">
+            <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, sapien non vestibulum
+                efficitur,
+                tortor lectus malesuada ligula, sed tincidunt nunc magna sed augue. Vivamus consequat, velit et tempus
+                volutpat, nulla purus tempus turpis, vitae feugiat sem neque non est.</p>
+            <blockquote id="citacao">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+            </blockquote>
+            <p id="p2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, sapien non vestibulum
+                efficitur,
+                tortor lectus malesuada ligula, sed tincidunt nunc magna sed augue. Vivamus consequat, velit et tempus
+                volutpat, nulla purus tempus turpis, vitae feugiat sem neque non est.
             </p>
-
+            <h2 id="intertitulo">Intertítulo</h2>
+            <p id="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, sapien non vestibulum
+                efficitur,
+                tortor lectus malesuada ligula, sed tincidunt nunc magna sed augue. Vivamus consequat, velit et tempus
+                volutpat, nulla ptempus turpis, vitae feugiat sem neque non est.</p>
+            <div class="mini-sec">
+                <img id="imgSecundaria" src="" alt="">
+                <div>
+                    <h3 id="miniTitulo">Intertítulo</h3>
+                    <p id="mini-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, sapien non vestibulum
+                        efficitur, tortor lectus malesuada ligula, sed tincidunt nunc magna sed augue. Vivamus
+                        consequat,
+                        velit et tempus volutpat, nulla purus tempus turpis, vitae feugiat sem neque non est.</p>
+                </div>
+            </div>
+            <p id="p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, sapien non vestibulum
+                efficitur,
+                tortor lectus malesuada ligula, sed tincidunt nunc magna sed augue. Vivamus consequat, velit et tempus
+                volutpat, nulla purus tempus turpis, vitae feugiat sem neque non est.</p>
         </section>
 
+        <section id="sec-leia-tbm">
+            <h1>Leia Também:</h1>
+            <div id="containerNoticias">
+
+            </div>
+            <!--FAZER JS-->
+        </section>
+        <section id="sec-final">
+            <h1>Fique por Dentro</h1>
+            <p>Gostou desta matéria? Continue acompanhando o O Sulista para explorar novas reportagens, entrevistas e
+                conteúdos especiais produzidos por estudantes. Aqui, você encontra informações, histórias e perspectivas
+                que valorizam a cultura, os acontecimentos e as pessoas que fazem parte da Região Sul.</p>
+            <blockquote>
+
+                “A informação não para por aqui. Sempre há uma nova história esperando para ser descoberta.”
+            </blockquote>
+        </section>
     </main>
     <footer>
         <img src="../assets/logo-branca.svg" alt="Logo do O Sulista" id="logo-footer">
@@ -121,8 +97,8 @@
         </p>
     </footer>
     <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
-    <script src="../js/noticias/dadosMaterias.js"></script>
-    <script src="../js/noticias/pagMateria.js"></script>
+    <script src="../js/noticias/materias.js"></script>
+    <script src="../js/noticias/materia.js"></script>
 </body>
 
 </html>
