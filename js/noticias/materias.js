@@ -12,7 +12,7 @@ const materias = [
         local: "Curitiba - PR",
 
         imagemPrincipal:
-            "https://t4.ftcdn.net/jpg/06/57/37/01/360_F_657370150_pdNeG5pjI976ZasVbKN9VqH1rfoykdYU.jpg",
+            "https://s2-g1.glbimg.com/1QzpTT4FHa8_bPogYlRvN8baYeI=/0x0:1400x788/1158x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/T/w/dMmoCXQkGAxuAzjUXAEQ/imagem-1-informe-7.png",
 
         paragrafo1:
             "O mercado imobiliário de alto padrão em Curitiba sempre teve como principal destino bairros considerados mais exclusivos. Durante muitos anos, regiões como Batel, Ecoville e Bigorrilho concentraram grande parte dos investimentos voltados para imóveis de luxo. Nos últimos anos, porém, o Centro da capital paranaense passou a apresentar mudanças que despertaram o interesse de investidores, incorporadoras e compradores. O crescimento da atividade econômica e os projetos de revitalização urbana têm contribuído para uma nova visão sobre a região. ",
@@ -29,7 +29,7 @@ const materias = [
         paragrafo3: "Especialistas observam que processos de valorização urbana costumam seguir etapas semelhantes em diversas cidades. Inicialmente surgem investimentos em infraestrutura e melhorias públicas. Em seguida, cresce a presença de comércios, serviços e atividades culturais. Com o fortalecimento desses setores, aumenta também o interesse do mercado residencial. Esse comportamento já foi registrado em diferentes cidades ao redor do mundo e pode estar começando a acontecer em Curitiba.",
 
         imagemSecundaria:
-            "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png",
+            "https://s2-g1.glbimg.com/xr48SXs4I428G-gX4Cx37TubEFw=/0x0:1400x788/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/5/Q/QMiUOeSeOkUAhJMN8BFw/imagem-2-informe-7.png",
 
         miniTitulo:
             "Regiões centrais ganham força novamente",

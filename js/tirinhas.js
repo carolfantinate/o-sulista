@@ -1,29 +1,29 @@
 
 const tirinhas = [
     {
-        titulo: "Tirinha 1",
-        autor: "Autor 1",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
-    },
-    {
-        titulo: "Tirinha 2",
+        titulo: "A Onomatopeia do Frio",
         autor: "Autor 2",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+        imagem: "../assets/tirinhas/tirinha-2.jpeg"
     },
     {
-        titulo: "Tirinha 3",
+        titulo: "O Churrasco do \"Pobre\"",
+        autor: "Autor 1",
+        imagem: "../assets/tirinhas/tirinha-1.jpeg"
+    },
+    {
+        titulo: "Guerra das dividas: A trena",
         autor: "Autor 3",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+        imagem: "../assets/tirinhas/tirinha-3.jpeg"
     },
     {
-        titulo: "Tirinha 4",
+        titulo: "O \"Bagual\" no trânsito",
         autor: "Autor 4",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+        imagem: "../assets/tirinhas/tirinha-4.jpeg"
     },
     {
-        titulo: "Tirinha 5",
+        titulo: "O \"Ciclone Uruguaio\" virtual",
         autor: "Autor 5",
-        imagem: "https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png"
+        imagem: "../assets/tirinhas/tirinha-5.jpeg"
     }
 ];
 

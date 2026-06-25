@@ -44,3 +44,7 @@ noticias.forEach(noticia => {
 
     gridNoticias.appendChild(card);
 });
+
+function acessarMateria() {
+    window.location.href = "materia.html?id=1"
+}
