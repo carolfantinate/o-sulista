@@ -72,26 +72,7 @@
         <section id="sec-ultimas-noticias">
             <h2>Últimas Notícias</h2>
             <div id="painel-noticias">
-                <div class="card-noticia">
-                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png" alt="Notícia 1"
-                        class="img-noticia img-not-1">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut </h3>
-                    <p>Autor: John Doe</p>
-                </div>
-                <div class="card-noticia">
-                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png" alt="Notícia 2"
-                        class="img-noticia img-not-2">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h3>
-                    <p>Autor: Jane Smith</p>
-                </div>
-                <div class="card-noticia">
-                    <img src="https://www.cma.com.br/wp-content/uploads/2023/01/placeholder-87-1.png" alt="Notícia 3"
-                        class="img-noticia">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                    <p>Autor: Bob Johnson</p>
-                </div>
+
             </div>
         </section>
 
@@ -128,7 +109,9 @@
 
         <section id="sec-quem-somos">
             <h2>Quem somos?</h2>
-            <p>Por trás de cada matéria, entrevista e conteúdo publicado existe uma equipe de estudantes dedicada a informar, inspirar e compartilhar histórias. Conheça as pessoas que tornam o O Sulista possível e ajudam a valorizar a cultura, o turismo e as tradições da Região Sul.</p>
+            <p>Por trás de cada matéria, entrevista e conteúdo publicado existe uma equipe de estudantes dedicada a
+                informar, inspirar e compartilhar histórias. Conheça as pessoas que tornam o O Sulista possível e ajudam
+                a valorizar a cultura, o turismo e as tradições da Região Sul.</p>
             <button onclick="abrirEquipe()">Conheça Nossa Equipe</button>
         </section>
 
@@ -162,6 +145,7 @@
     <script src="js/clima.js"></script>
     <script src="js/cotacoes.js"></script>
     <script src="js/carrossel.js"></script>
+    <script src="js/noticias/materias.js"></script>
     <script>
         function abrirVideo() {
             window.location.href = "./pages/midias.html";
@@ -171,9 +155,45 @@
             window.location.href = "./pages/midias.html#sec-recentes"
         }
 
-        function abrirEquipe(){
+        function abrirEquipe() {
             window.location.href = "./pages/equipe.html"
         }
+
+        //
+
+        const painelNoticias = document.getElementById("painel-noticias");
+
+        const noticiasHome = materias.slice(0, 3);
+
+        noticiasHome.forEach((materia, index) => {
+
+            const card = document.createElement("div");
+            card.classList.add("card-noticia");
+
+            let classeImagem = "img-noticia";
+
+            if (index === 0) {
+                classeImagem += " img-not-1";
+            } else if (index === 1) {
+                classeImagem += " img-not-2";
+            }
+
+            card.innerHTML = `
+                <a href="pages/materia.html?id=${materia.id}">
+                    <img
+                        src="${materia.imagemPrincipal}"
+                        alt="${materia.titulo}"
+                        class="${classeImagem}"
+                    >
+
+                    <h3>${materia.titulo}</h3>
+
+                    <p>${materia.subtitulo}</p>
+                </a>
+            `;
+
+            painelNoticias.appendChild(card);
+        });
     </script>
 </body>
 

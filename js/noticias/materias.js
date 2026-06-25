@@ -4,7 +4,7 @@ const materias = [
 
         titulo: "Centro de Curitiba volta a chamar atenção do mercado imobiliário de alto padrão ",
 
-        subtitulo: "Por Redação - O Sulista",
+        subtitulo: "23/06/2026 | Redação - O Sulista",
 
         descricao:
             "Após anos fora do foco dos empreendimentos mais valorizados da cidade, a região central volta a atrair investidores e compradores impulsionada por projetos de revitalização, crescimento comercial e mudanças no perfil dos moradores.",
@@ -48,7 +48,7 @@ const materias = [
 
         titulo: "Prefeitura impede construção de arranha-céu em área turística de Balneário Camboriú",
 
-        subtitulo: "Por Redação - O Sulista",
+        subtitulo: "23/06/26 | Redação - O Sulista",
 
         descricao:
             "Projeto previa um edifício de luxo com mais de 40 andares próximo à Estrada da Rainha, mas foi barrado para preservar uma das paisagens mais conhecidas da cidade catarinense. ",
@@ -84,7 +84,7 @@ const materias = [
 
         titulo: "Após 30 anos em parque temático, elefanta Baby inicia nova vida em santuário",
 
-        subtitulo: "Por Redação - O Sulista",
+        subtitulo: "23/06/26 | Redação - O Sulista",
 
         descricao:
             "A elefanta asiática Baby começou uma nova etapa de sua vida após ser transferida do Beto Carrero World para o Santuário de Elefantes Brasil. Após uma viagem de 48h, ela chegou ao Mato Grosso e já demonstra curiosidade ao explorar seu novo ambiente, que oferece mais espaço e contato com a natureza.",
@@ -119,7 +119,7 @@ const materias = [
 
         titulo: "Porto Belo aposta em planejamento e integração regional para sustentar crescimento",
 
-        subtitulo: "Por Redação - O Sulista",
+        subtitulo: "19/06/26 | Redação - O Sulista",
 
         descricao:
             "Porto Belo vive um período de crescimento acelerado e busca equilibrar desenvolvimento urbano, preservação ambiental e fortalecimento da economia local. A cidade tem investido em mobilidade, integração com municípios vizinhos e eventos que movimentam o turismo ao longo de todo o ano.",
@@ -155,7 +155,7 @@ const materias = [
 
         titulo: "Frio intenso leva cidades da Serra Catarinense a adotar medidas nas escolas",
 
-        subtitulo: "Por Redação - O Sulista",
+        subtitulo: "23/06/26 | Redação - O Sulista",
 
         descricao:
             "Com previsão de temperaturas abaixo de -5°C, municípios suspendem aulas ou flexibilizam a frequência dos estudantes durante a onda de frio que atinge Santa Catarina.",
@@ -191,7 +191,7 @@ const materias = [
 
         titulo: "Associação de cegos em Porto Alegre é alvo de 5 furtos em um mês",
 
-        subtitulo: "Por Redação - O Sulista",
+        subtitulo: "24/06/26 | Redação - O Sulista",
 
         descricao:
             "Entidade de Porto Alegre foi invadida cinco vezes em menos de um mês e busca ajuda para recuperar equipamentos essenciais ao funcionamento do local.",
@@ -226,7 +226,7 @@ const materias = [
 
         titulo: "Audiovisual paranaense cresce, gera empregos e leva histórias do estado para o mundo",
 
-        subtitulo: "Por Redação - O Sulista",
+        subtitulo: "24/06/26 | Redação - O Sulista",
 
         descricao:
             "Produções filmadas no Paraná fortalecem a economia, movimentam diferentes setores e ajudam a divulgar a cultura, as paisagens e a identidade paranaense dentro e fora do Brasil.",

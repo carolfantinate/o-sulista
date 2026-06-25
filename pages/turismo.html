@@ -34,12 +34,27 @@
             <img src="../assets/estados-sul.png" alt="estados do Sul">
         </section>
         <section id="sec-mapa">
-            <h1>Mapa Turístico</h1>
+            <div>
+                <h1>Mapa Turístico</h1>
+                <select id="selectEstadoGirias">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </select>
+            </div>
             <p>Explore os principais destinos da Região Sul através do mapa interativo. Descubra cidades, atrações e
                 pontos turísticos que destacam a riqueza cultural, histórica e natural da região.</p>
             <br>
             <iframe src="https://www.google.com/maps/d/embed?mid=1dQcgNflXiCwzi6ZrIX2TItwLXGiLsZIO&ehbc=2E312F"
                 width="90%" height="480"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3305721.3306415346!2d-51.62850312077882!3d-26.606021783984584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spontos%20tur%C3%ADsticos%20paran%C3%A1!5e1!3m2!1spt-BR!2sbr!4v1782385266926!5m2!1spt-BR!2sbr"
+                width="90%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3304024.4359295466!2d-51.628236127861214!3d-26.664679048027065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spontos%20tur%C3%ADsticos%20santa%20catarina!5e1!3m2!1spt-BR!2sbr!4v1782385219753!5m2!1spt-BR!2sbr"
+                width="90%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </section>
         <section>
             <h1>Destinos em destaque</h1>
@@ -68,35 +83,44 @@
         </section>
         <section>
             <h1>Melhor Época para Visitar</h1>
-            <p>A Região Sul oferece experiências únicas em todas as estações do ano. Escolher a melhor época para viajar depende do tipo de passeio e das atividades que você deseja realizar.</p>
+            <p>A Região Sul oferece experiências únicas em todas as estações do ano. Escolher a melhor época para viajar
+                depende do tipo de passeio e das atividades que você deseja realizar.</p>
             <div id="estacoes-container">
                 <div class="card-estacao">
-                    <img src="https://www.farejaviagens.com.br/wp-content/uploads/2025/07/Verao-em-Balneario-Camboriu-Flores-no-canteiro-com-mar-ao-fundo.jpeg" alt="Verão em Balneário Camboriú">
+                    <img src="https://www.farejaviagens.com.br/wp-content/uploads/2025/07/Verao-em-Balneario-Camboriu-Flores-no-canteiro-com-mar-ao-fundo.jpeg"
+                        alt="Verão em Balneário Camboriú">
                     <div class="info-card-estacao">
                         <h3>☀️ Verão (dezembro a março)</h3>
-                        <p>Ideal para aproveitar praias, atividades ao ar livre e o litoral catarinense. As temperaturas são mais elevadas e as cidades litorâneas recebem grande número de visitantes.</p>
+                        <p>Ideal para aproveitar praias, atividades ao ar livre e o litoral catarinense. As temperaturas
+                            são mais elevadas e as cidades litorâneas recebem grande número de visitantes.</p>
                     </div>
                 </div>
                 <div class="card-estacao">
                     <div class="info-card-estacao">
                         <h3>🍂 Outono (março a junho)</h3>
-                        <p>Período com clima ameno e paisagens encantadoras. É uma ótima época para explorar cidades históricas, realizar passeios culturais e apreciar a gastronomia regional.</p>
+                        <p>Período com clima ameno e paisagens encantadoras. É uma ótima época para explorar cidades
+                            históricas, realizar passeios culturais e apreciar a gastronomia regional.</p>
                     </div>
-                    <img src="https://cafeviagem.com/wp-content/uploads/2016/04/Ecoland-Igrejinha-640x427.jpg" alt="Outono no RS">
+                    <img src="https://cafeviagem.com/wp-content/uploads/2016/04/Ecoland-Igrejinha-640x427.jpg"
+                        alt="Outono no RS">
                 </div>
                 <div class="card-estacao">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Neve_Caxias_do_Sul_(3).jpg/330px-Neve_Caxias_do_Sul_(3).jpg" alt="neve em Caxias do Sul">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Neve_Caxias_do_Sul_(3).jpg/330px-Neve_Caxias_do_Sul_(3).jpg"
+                        alt="neve em Caxias do Sul">
                     <div class="info-card-estacao">
                         <h3>❄️ Inverno (junho a setembro)</h3>
-                        <p>Perfeito para visitar a Serra Gaúcha, desfrutar do clima frio, experimentar vinhos e conhecer eventos típicos da estação. É uma das épocas mais procuradas por turistas.</p>
+                        <p>Perfeito para visitar a Serra Gaúcha, desfrutar do clima frio, experimentar vinhos e conhecer
+                            eventos típicos da estação. É uma das épocas mais procuradas por turistas.</p>
                     </div>
                 </div>
                 <div class="card-estacao">
                     <div class="info-card-estacao">
                         <h3>🌸 Primavera (setembro a dezembro)</h3>
-                        <p>Período com clima ameno e paisagens encantadoras. É uma ótima época para explorar cidades históricas, realizar passeios culturais e apreciar a gastronomia regional.</p>
+                        <p>Período com clima ameno e paisagens encantadoras. É uma ótima época para explorar cidades
+                            históricas, realizar passeios culturais e apreciar a gastronomia regional.</p>
                     </div>
-                    <img src="https://altoastral.joaobidu.com.br/antigas/uploads/legacy/2016/09/lugares-lindos-primavera-curitiba.jpg" alt="Jardim Botânico Municipal de Curitiba">
+                    <img src="https://altoastral.joaobidu.com.br/antigas/uploads/legacy/2016/09/lugares-lindos-primavera-curitiba.jpg"
+                        alt="Jardim Botânico Municipal de Curitiba">
                 </div>
             </div>
         </section>
