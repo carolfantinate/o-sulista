@@ -7,7 +7,7 @@ h1 {
 #sec-introducao {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 50px 100px;
     font-size: 1em;
 }

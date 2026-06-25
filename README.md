@@ -40,8 +40,6 @@ A Região Sul estará representada através de diversos elementos culturais e in
 
 ## 🎨 Paleta de Cores
 
-## 🎨 Paleta de Cores
-
 | Cor | Código Hexadecimal | Visualização | Justificativa |
 |------|------|------|------|
 | Azul Marinho | `#17294B` | ![](https://placehold.co/50x50/17294B/FFF) | Cor principal do projeto. Transmite credibilidade, seriedade e profissionalismo, características importantes para um portal de notícias. |
